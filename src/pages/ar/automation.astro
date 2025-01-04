@@ -1,0 +1,323 @@
+---
+import Container from "@components/container.astro";
+import Arlayout from "@layouts/Arlayout.astro";
+import { Picture } from "astro:assets";
+import heroImage from "assets/rocketman.png";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
+import LaythA from "@assets/testimonial/laytha.png";
+import AlinaB from "@assets/testimonial/alinab.png";
+
+const features = [
+  {
+    title: "اكتشاف",
+    description:
+    "نقوم بتحليل سير العمل لديك لتحديد المهام الجاهزة للأتمتة، وتقديم توصيات مخصصة لتعزيز الكفاءة.",
+    icon: "bx:dice-1",
+
+  },
+  {
+    title: "تصميم الحل",
+    description:
+   " يتم إنشاء النماذج الأولية وتحسينها بناءً على مدخلاتك لضمان الملاءمة المثالية لشركتك." ,
+      icon: "bx:dice-2",
+  },
+  {
+    title: "التنفيذ والتحسين",
+    description:
+      "نحن ندمج الأتمتة بسلاسة في عملياتك ونضبط كل التفاصيل لتحقيق أقصى قدر من التأثير.",
+    icon: "bx:dice-3",
+  },
+  
+];
+---
+
+<Arlayout title="Automation">
+ 
+  <Container dir="rtl">
+    <!--Arabic Hero -->
+    <main
+    class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+    dir="rtl">
+    <div class="py-6 md:order-1 hidden md:block"
+    dir="rtl">
+      <Picture
+        src={heroImage}
+        alt="Automation testimonials"
+        widths={[200, 400, 600]}
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+      />
+    </div>
+    <div>
+      <!-- Arabic Hero -->
+      <h1
+        class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter"
+        dir="rtl">
+        وفر الوقت وزيد الأرباح باستخدام أتمتة الذكاء الاصطناعي </h1>
+      <p class="text-lg mt-4 text-slate-600 max-w-xl"
+      dir="rtl">
+      استغل قوة الذكاء الاصطناعي لتبسيط العمليات وخفض التكاليف وركز على النمو ودع الأتمتة تتولى  بقية المهام.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3"
+      dir="rtl">
+        <Link
+          href="#"
+          href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+          target="_blank"
+          class="flex gap-1 items-center justify-center"
+          rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+          تحديد موعد
+        </Link>
+      
+      </div>
+    </div>
+  </main>
+  <!-- Arabic Hero -->
+  <div class="mt-2" dir="rtl">
+    <h2 class="text-center text-slate-500" dir="rtl">الشراكات التي تغذي نجاحنا
+    </h2>
+    <div class="flex gap-8 md:gap-20 items-center justify-center mt-6 flex-wrap">
+      <Icon class="size-8 md:size-12" name="simple-icons:google" />
+      <Icon class="size-8 md:size-16" name="simple-icons:youtube" />
+      <Icon class="size-8 md:size-12" name="simple-icons:meta" />
+      <Icon class="size-8 md:size-12" name="simple-icons:shopify" />
+      <Icon class="size-8 md:size-12" name="simple-icons:tiktok" />
+    </div>
+  </div>
+   <!-- Arabic Hero -->
+  <!-- Arabic Testimonials -->
+  
+
+    
+  <div class="mt-5 grid sm:grid-cols-2 md:grid-cols-3 gap-5 pt-16" dir="rtl">
+    <div class="rounded-lg p-6" dir="rtl"> 
+        <h2 class="text-3xl font-semibold" dir="rtl">
+          جرب قوة أتمتة الأعمال
+         </h2>   
+        <p>
+          خلينا نبسط عملك لتحقيق النجاح، واستمتع بعصر جديد من الأتمتة كما فعل بعض عملائنا. 
+        </p>
+    </div>
+    <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg" dir="rtl">
+        <div class="grid grid-flow-col" dir="rtl">
+            
+            <Picture
+            src={AlinaB}
+            alt="Automation testimonials"
+            widths={[200,200,200]}
+            sizes="(max-width: 800px) 100vw, 600px"
+            loading="eager"
+            format="avif"
+            dir="rtl"
+          />
+        
+        <div class="" dir="rtl">
+            <h4 class="text-2xl font-semibold" dir="rtl">
+              ألينا
+            </h4>
+            <p dir="rtl">
+              شركة ناشئة لإنقاص الوزن
+
+            </p>
+            <p class=""dir="rtl">
+              شهادة تم التقاطها عبر مكالمة هاتفية.             </p>   
+        </div>        
+    </div>
+        
+        <p class="text-lg pt-2 mt-2" dir="rtl">
+          بمساعدة اف في ام  ، قمنا بتنفيذ أتمتة دعم العملاء مما أدى إلى زيادة وقت الاستجابة لدينا بنسبة 50%. العملاء قد لاحظو الفرق بشكل فوري     </p> 
+    </div>
+    <div>
+      <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg" dir="rtl">
+        <div class="grid grid-flow-col">
+            
+                <Picture
+                src={LaythA}
+                alt="Automation testimonials"
+                widths={[200,200,200]}
+                sizes="(max-width: 800px) 100vw, 600px"
+                loading="eager"
+                format="avif"
+                dir="rtl"
+              />
+            
+            <div dir="rtl">
+                <h4 class="text-2xl font-semibold"
+                dir="rtl">
+                  ليث
+                </h4>
+                <p dir="rtl">
+                  مدير فريق المبيعات                </p>
+                <p class="" dir="rtl">
+                  شهادة تم التقاطها عبر الواتساب.
+                </p> 
+            </div>        
+        </div>
+       
+        <p class="text-lg pt-2 mt-2" dir="rtl">
+          لقد وفرت علينا شركة اف في ام 20 ساعة أسبوعيًا من خلال أتمتة عملية دمج العملاء. يركز فريقنا الآن على تنمية الأعمال! كما يسعد الموظفون بالحصول على المزيد من الفرص مع توفير وقتهم.        </p> 
+    </div>
+    </div>
+  </div>
+  <!-- Arabic Testimonials -->
+  <!-- Arabic Features -->
+     <!-- Three -->
+      <div>
+        <div>
+          <div class="pt-24 mt-16 md:mt-0" dir="rtl">
+            <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+              اكتشف حلول الأتمتة المصممة خصيصا.            </h2>
+            <p class="text-lg mt-4 text-slate-600">
+              الأتمتة ضرورية لتوسيع نطاق أي عمل تجاري. تتيح عمليتنا المتعمقة لشركتك الاستفادة من الأتمتة، دون الحاجة إلى المعرفة أو الصداع الفني.            </p>
+          </div>
+        </div>
+        <div>
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16"
+          dir="rtl">
+            {
+              features.map((item) => (
+                <div class="flex gap-4 items-start" dir="rtl">
+                  <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0" dir="rtl">
+                    <Icon class="text-white" name={item.icon} />
+                  </div>
+                  <div>
+                    <h3 dir="rtl" class="font-semibold text-lg">{item.title}</h3>{" "}
+                    <p dir="rtl" class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+       
+      </div>
+  
+  
+  <!-- Arabic Features -->
+   <div>
+    <div dir="rtl" class="pt-24 mt-16 md:mt-0">
+      <h2 dir="rtl" class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+        لماذا تزدهر الأعمال التجارية معنا.
+      </h2>
+      <p dir="rtl" class="text-lg mt-4 text-slate-600">
+        نحن في FVM، نجعل الأتمتة سهلة وبسيطة. تعمل أساليبنا التي أثبتت جدواها على تبسيط المهام المعقدة وتوفير الوقت وخفض التكاليف - مما يتيح لك التركيز على ما هو أكثر أهمية: تنمية أعمالك.
+      </p>
+    </div>
+    
+    <div dir="rtl" class="grid sm:grid-cols-1 md:grid-cols-2 pt-8">
+    
+      <div class="" dir="rtl">
+        <p dir="rtl" class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+          توفير المال
+        </p>
+        <div dir="rtl" class="p-2 md:mt-0"> 
+          <h2 dir="rtl" class="text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+            خفض التكاليف وزيادة الأرباح بشكل كبير
+          </h2>
+        <p dir="rtl" class="text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+          ودِّع أوجه القصور ورحِّب بالتوفير مع الأتمتة المدعومة بالذكاء الاصطناعي. من خلال تقليل الأخطاء البشرية وأتمتة العمليات، يمكن لشركتك خفض التكاليف دون المساس بالنتائج. لا يتعلق الأمر فقط بتوفير المال - بل بتعظيم كل دولار تستثمره.
+        </p>
+        </div>
+      </div> 
+      <div dir="rtl" class="bg-emerald-300 rounded-lg p-5 text-left shadow-lg">
+        <h3 dir="rtl" class="pt-3 text-6xl lg:text-6xl font-bold lg:tracking-tight ">
+          48%  
+        </h3>
+        <p dir="rtl" class="text-xl lg:text-xl font-bold lg:tracking-tight">
+          خفض التكاليف التشغيلية
+         </p>      
+         <p  dir="rtl" class="text-lg text-slate-600">
+          تشهد الشركات انخفاضاً يصل إلى 48% في النفقات التشغيلية من خلال أتمتة المهام الروتينية.
+         </p>  
+        </div>  
+    </div> 
+   </div>
+  
+  
+  <!-- two -->
+  <div>
+    <div dir="rtl" class="grid md:grid-cols-2 gap-8 pt-24">
+      <!-- Right Side (Text Section) -->
+      <div dir="rtl" class="p-5 order-1 md:order-2">
+        <div dir="rtl" class="mt-8 md:mt-0">
+          <p dir="rtl" class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+            توفير الوقت
+          </p>
+          <h2 dir="rtl" class="text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+            أطلق العنان لساعات من الحرية مع كفاءة الذكاء الاصطناعي
+          </h2>
+          <p dir="rtl" class="text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+            تعمل أتمتة الذكاء الاصطناعي على إزالة المهام المتكررة من على عاتقك، مما يوفر الوقت لفريقك للتركيز على الأهداف ذات الصورة الكبيرة. تعني عمليات سير العمل المبسطة إنجازاً أسرع للمشروع ومساراً أكثر سلاسة لتحقيق النجاح. تخيّل ما يمكن أن يحققه عملك مع توفير المزيد من الوقت من جانبك.
+          </p>
+        </div>
+      </div>
+    
+      <!-- Left Side (Stat Section) -->
+      <div dir="rtl" class="bg-emerald-300 rounded-lg p-5 text-left shadow-lg order-2 md:order-1">
+        <h3 dir="rtl" class="pt-5 text-6xl lg:text-6xl font-bold lg:tracking-tight">
+          72%
+        </h3>
+        <p dir="rtl" class="text-xl lg:text-xl font-bold lg:tracking-tight">
+          اتخاذ القرارات بشكل أسرع:
+        </p>
+        <p dir="rtl" class="text-lg mt-2 text-slate-600">
+          تساعد أتمتة الذكاء الاصطناعي الشركات على اتخاذ القرارات بشكل أسرع بنسبة 72%، مما يؤدي إلى نمو وابتكار أسرع.
+        </p>
+      </div>
+    </div>
+      
+  </div>
+  
+  
+  <!-- Three -->
+  <div>
+    <div dir="rtl" class="grid sm:grid-cols-1 md:grid-cols-2 pt-24">
+      <div dir="rtl" class="p-5">
+        <p dir="rtl" class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+          الاحتفاظ بالعملاء
+        </p>
+        <div dir="rtl" class="p-2 md:mt-0"> 
+          <h2 dir="rtl" class="text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+            تحويل كل عميل إلى معجب مخلص
+          </h2>
+        <p dir="rtl" class="text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+          باستخدام الذكاء الاصطناعي، يمكنك إنشاء تجارب مصممة خصيصاً لتجعل كل عميل يشعر بالتقدير. بدءاً من التوصيات المخصصة إلى الدعم الفوري، تضمن لك الأتمتة أن يكون كل تفاعل هادف ومؤثر. قم ببناء الثقة، وتعزيز الرضا، وشاهد قاعدة عملائك وهي تنمو.
+        </p>
+        </div>
+      </div> 
+      <div dir="rtl" class="bg-emerald-300 rounded-lg p-5 text-left shadow-lg">
+        <h3 dir="rtl" class="pt-5 text-6xl lg:text-6xl font-bold lg:tracking-tight ">
+          67% 
+        </h3>
+        <p dir="rtl" class="text-xl lg:text-xl font-bold lg:tracking-tight">
+          تحسن في الاحتفاظ بالعملاء
+         </p>      
+         <p dir="rtl" class="text-lg text-slate-600">
+          تشهد الشركات التي تستفيد من الأتمتة تحسناً بنسبة 67% في الاحتفاظ بالعملاء من خلال تقديم تفاعلات متسقة وفي الوقت المناسب.
+         </p>  
+        </div>  
+      </div> 
+    </div>
+    
+  
+
+   <!-- Arabic Salestext -->
+ <!-- Arabic CTA -->
+ <div dir="rtl"
+ class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+ <h2  dir="rtl" class="text-white text-4xl md:text-6xl tracking-tight">
+  رحلتك تبدأ من هنا.
+ </h2>
+ <p dir="rtl" class="text-slate-400 mt-4 text-lg md:text-xl">
+  تحدث إلى أحد أعضاء الفريق
+ </p>
+ <div dir="rtl"  class="flex mt-5">
+   <Link dir="rtl" href="#" style="inverted">احجز استشارتك المجانية</Link>
+ </div>
+</div>
+<!-- Arabic CTA -->
+  </Container>
+</Arlayout>

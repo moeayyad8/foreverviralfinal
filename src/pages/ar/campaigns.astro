@@ -1,0 +1,23 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Campaignfeatures from "@components/campaigns/campaignfeatures.astro";
+import Service from "@components/campaigns/campaignhero.astro";
+import Layout from "@layouts/Layout.astro";
+import Salestext from "@components/campaigns/campaignsalestext.astro"
+import Logos from "@components/campaigns/campaignlogos.astro";
+import CampaignTestimonials from "@components/campaigns/campaigntestimonials.astro"
+import Casestudy from "@components/casestudy.astro";
+---
+
+<Layout title="Campaigns">
+  <Container>
+    <Service />
+    <Logos />
+    <CampaignTestimonials/>
+    <Campaignfeatures />
+    <Salestext/>
+    <Casestudy/>
+    <Cta />
+  </Container>
+</Layout>

@@ -1,0 +1,81 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import LaythA from "@assets/testimonial/sahilb.png";
+import AlinaB from "@assets/testimonial/alinal.png"
+---
+
+   
+
+    <div class="mt-5 grid sm:grid-cols-2 md:grid-cols-3 gap-5 pt-16">
+        <div class="rounded-lg p-6">
+            <h2 class="text-3xl font-semibold">
+             Campaigns that make you smile, not stress.
+             </h2>   
+            <p class="pt-4">
+            Our goal is to build campaigns that are so effective, they become the standard.
+            </p>
+        </div>
+        <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg">
+            <div class="grid grid-flow-col">
+                
+                <Picture
+                src={AlinaB}
+                alt="Automation testimonials"
+                widths={[200,200,200]}
+                sizes="(max-width: 800px) 100vw, 600px"
+                loading="eager"
+                format="avif"
+              />
+            
+            <div class="">
+                <h4 class="text-2xl font-semibold">
+                   Nicole C
+                </h4>
+                <p>
+                  Small Business Owner
+                </p>
+                <p class="">
+                    Testimonial captured via IMessage.
+                 </p> 
+            </div>        
+        </div>
+             
+            <p class="text-lg pt-2 mt-2">
+               "I had one location when I started working with FVM. I knew our concept was good I just needed to get infront of more people. FVM delivered far better than I expected. I had to hire additional staff and automate some of my own responsibilities to keep up with the demand."
+        </p> 
+        </div>
+        <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg">
+            <div class="grid grid-flow-col">
+                
+                    <Picture
+                    src={LaythA}
+                    alt="Automation testimonials"
+                    widths={[200,200,200]}
+                    sizes="(max-width: 800px) 100vw, 600px"
+                    loading="eager"
+                    format="avif"
+                  />
+                
+                <div>
+                    <h4 class="text-2xl font-semibold">
+                     Sahil B
+                    </h4>
+                    <p>
+                    E-Commerce Store
+                    </p>
+                    <p class="">
+                        Testimonial captured via Whatsapp.
+                     </p> 
+                </div>        
+            </div>
+           
+            <p class="text-lg pt-2 mt-2">
+               "Content and targeting is the entire premise of my business, without it I will fail. While I was focused on scaling and getting some better sourcing methods I needed some help. FVM stepped in and did everything I needed them to do and more. Very greatful for you guys..
+            </p> 
+        </div>
+     
+     

@@ -1,0 +1,81 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import LaythA from "@assets/testimonial/alia.png";
+import AlinaB from "@assets/testimonial/sarat.png";
+---
+
+   
+
+    <div class="mt-5 grid sm:grid-cols-2 md:grid-cols-3 gap-5 pt-16">
+        <div class="rounded-lg p-6">
+            <h2 class="text-3xl font-semibold pt-6">
+                We are the team behind what's next.
+             </h2>   
+            <p class="pt-4">
+            Realistic Results, Realistic Timelines, and unprecedented growth. We are the team that will take your business to the next level.
+            </p>
+        </div>
+        <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg">
+            <div class="grid grid-flow-col">
+                
+                <Picture
+                src={AlinaB}
+                alt="Automation testimonials"
+                widths={[200,200,200]}
+                sizes="(max-width: 800px) 100vw, 600px"
+                loading="eager"
+                format="avif"
+              />
+            
+            <div class="">
+                <h4 class="text-2xl font-semibold">
+                    Alina B.
+                </h4>
+                <p>
+                    Franchise Owner
+                </p>
+                <p class="">
+                    Testimonial captured via phone call.
+                 </p>   
+            </div>        
+        </div>
+            
+            <p class="text-lg pt-2 mt-2">
+               "We've grown to the most followed store out of 200 locations in just three months. Completely organically with over 75 videos amassing more than a million views each. It was beautiful to watch in real time."
+        </p> 
+        </div>
+        <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg">
+            <div class="grid grid-flow-col">
+                
+                    <Picture
+                    src={LaythA}
+                    alt="Automation testimonials"
+                    widths={[200,200,200]}
+                    sizes="(max-width: 800px) 100vw, 600px"
+                    loading="eager"
+                    format="avif"
+                  />
+                
+                <div>
+                    <h4 class="text-2xl font-semibold">
+                        Henry Y.
+                    </h4>
+                    <p>
+                        Cleaning Service Owner
+                    </p>
+                    <p class="">
+                        Testimonial captured via Whatsapp.
+                     </p> 
+                </div>        
+            </div>
+           
+            <p class="text-lg pt-2 mt-2">
+               "I've worked with alot marketing companies that never fufill on big promises. FVM was the complete opposite, they underpromised and over delivered. I have tripled the size of my business since working with them."
+            </p> 
+        </div>
+     
+     

@@ -1,0 +1,27 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Automationfeatures from "@components/automation/automationfeatures.astro";
+import Service from "@components/automation/automationhero.astro";
+import Layout from "@layouts/Layout.astro";
+import Salestext from "@components/automation/salestext.astro"
+import Testimonial from "@components/automation/automationtestimonials.astro"
+import Logos from "@components/automation/automationlogos.astro";
+import Stats from "@components/automation/automationstats.astro"
+import { useI18next } from 'astro-i18next';
+import LanguageSwitcher from "@components/LanguageSwitcher.jsx";
+import Casestudy from "@components/casestudy.astro";
+---
+
+<Layout title="Automation">
+ 
+  <Container>
+    <Service />
+    <Logos />
+    <Testimonial/>
+    <Automationfeatures />
+    <Salestext/>
+    <Casestudy/>
+    <Cta />
+  </Container>
+</Layout>

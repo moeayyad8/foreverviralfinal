@@ -1,0 +1,52 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Discovery",
+    description:
+    "We analyze your workflows to identify tasks ripe for automation, offering tailored recommendations to boost efficiency.",
+    icon: "bx:dice-1",
+
+  },
+  {
+    title: "Solution Design",
+    description:
+      "Prototypes are created and refined with your input to ensure the perfect fit for your business.",
+    icon: "bx:dice-2",
+  },
+  {
+    title: "Implementation & Optimization",
+    description:
+      "We seamlessly integrate automation into your operations and fine-tune every detail for maximum impact.",
+    icon: "bx:dice-3",
+  },
+  
+];
+---
+
+<div class="pt-24 mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Discover Tailored Automation Solutions.
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Automation is pivotal to scaling any business. Our in-depth process allows your business to benefit from automation, without the knowledge or technical headache.
+  </p>
+</div>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+

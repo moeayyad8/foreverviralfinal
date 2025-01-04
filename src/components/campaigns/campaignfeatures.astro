@@ -1,0 +1,49 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Data-Driven Strategy Design",
+    description: "We analyze your past campaigns, audience data, and market trends to uncover opportunities. Our custom strategy is designed to align with your goals.",
+    icon: "bx:dice-1",
+  },
+  {
+    title: "High-Impact Creatives & Targeting",
+    description:
+      "We create ads that capture attention and drive conversions. Then, we set up your campaigns with precision, targeting the right audience and maximizing placement.",
+    icon: "bx:dice-2",
+  },
+  {
+    title: "Ongoing Optimization & Scaling",
+    description:
+      "After launch, we continuously optimize campaigns, refine targeting, test creatives, and scale what works—ensuring the best possible ROI at every stage.",
+    icon: "bx:dice-3",
+  },
+  
+];
+---
+
+<div class="pt-24 mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Dominate Markets with Ads That Convert.
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    We craft powerful campaigns that cut through the noise and deliver results. Our team works with you to understand your goals, ensuring every ad is fine-tuned to drive real growth, boost conversions, and elevate your business.
+</div>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+

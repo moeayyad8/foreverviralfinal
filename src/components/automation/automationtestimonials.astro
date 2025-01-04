@@ -1,0 +1,81 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import LaythA from "@assets/testimonial/laytha.png";
+import AlinaB from "@assets/testimonial/alinab.png";
+---
+
+   
+
+    <div class="mt-5 grid sm:grid-cols-2 md:grid-cols-3 gap-5 pt-16">
+        <div class="rounded-lg p-6">
+            <h2 class="text-3xl font-semibold">
+                Experience the power of business automation
+             </h2>   
+            <p>
+            Let us streamline your business for success, and enjoy the new age of automation just like some of our clients have.
+            </p>
+        </div>
+        <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg">
+            <div class="grid grid-flow-col">
+                
+                <Picture
+                src={AlinaB}
+                alt="Automation testimonials"
+                widths={[150,150,150]}
+                sizes="(max-width: 100px) 100vw, 600px"
+                loading="eager"
+                format="avif"
+              />
+            
+            <div class="">
+                <h4 class="text-2xl font-semibold">
+                    Alina B.
+                </h4>
+                <p>
+                    Weight Loss Startup
+                </p>
+                <p class="">
+                    Testimonial captured via phone call.
+                 </p>   
+            </div>        
+        </div>
+            
+            <p class="text-lg pt-2 mt-2">
+               "With FVM's help, we implemented customer support automation that boosted our response time by 50%. Clients noticed the difference immediately"
+        </p> 
+        </div>
+        <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg">
+            <div class="grid grid-flow-col">
+                
+                    <Picture
+                    src={LaythA}
+                    alt="Automation testimonials"
+                    widths={[200,200,200]}
+                    sizes="(max-width: 800px) 100vw, 600px"
+                    loading="eager"
+                    format="avif"
+                  />
+                
+                <div>
+                    <h4 class="text-2xl font-semibold">
+                        Layth A.
+                    </h4>
+                    <p>
+                        Sales Team Accelerator
+                    </p>
+                    <p class="">
+                        Testimonial captured via Whatsapp.
+                     </p> 
+                </div>        
+            </div>
+           
+            <p class="text-lg pt-2 mt-2">
+               "FVM saved us 20 hours weekly by automating client onboarding. Our team is now focused on growing the business! Employees are also happy to have more opportunites with their time freeing.
+            </p> 
+        </div>
+     
+     

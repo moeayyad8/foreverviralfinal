@@ -1,0 +1,70 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "AI Automation",
+    description:
+      "Harness the power of AI to streamline operations, slash costs, and focus on growth while automation handles the rest.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Campaigns",
+    description:
+      "By focusing on proven strategies, we help you craft impactful campaigns that deliver real results.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Creator Management",
+    description:
+      "Talent representation, brand deals, and content creation. We help creators grow their brand and monetize their content.",
+    icon: "bx:bx-group",
+  },
+  {
+    title: "Globalization",
+    description:
+      "We help brands expand their reach into new markets, ensuring that their message resonates with a global audience.",
+    icon: "bx:bx-world",
+  },
+  {
+    title: "Content Creation",
+    description:
+      "Take advantage of our powerful content team responsible for delivering content that has amassed billions of views.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Tiktok LIVE Management",
+    description:
+      "We are an offical Tiktok Creator Network. Trusted by new & emerging streamers to unlock their full earning potential.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="pt-16 mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Discovery, Execution, Optimization.
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    All of our offerings follow this simple yet extremely powerful framework. This allows us to succesfully break into new niches
+    execute technical projects, and ensure consistent reliable results for our clients.
+  </p>
+</div>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<p class="text-center text-slate-900 ">& much more.</p>

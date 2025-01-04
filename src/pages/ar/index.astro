@@ -1,0 +1,152 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import heroImage from "assets/heroimg.png";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
+import Arlayout from "@layouts/Arlayout.astro";
+
+
+const features = [
+  {
+    title: "أتمتة الذكاء الاصطناعي",
+    description:
+      "تولى أتمتة الذكاء الاصطناعي المهام المتكررة، مما يتيح لفريقك الوقت للتركيز على الأهداف الكبرى. وتعني سير العمل المبسطة إكمال المشروع بشكل أسرع ومسارًا أفضل للنجاح",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "الحملات الإعلانية",
+    description:
+      "نحن نصمم حملات قوية تجذب الانتباه وتحقق النتائج. يعمل فريقنا معك لفهم أهدافك، مما يضمن ضبط كل إعلان بدقة لتحقيق نمو حقيقي، وتعزيز التحويلات، والارتقاء بأعمالك.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "التسويق عبر المؤثرين",
+    description:
+      "الشراكة مع شخصيات معروفة على وسائل التواصل الاجتماعي لزيادة المبيعات والمصداقية والوعي بالعلامة التجارية مع شخصيات موثوقة في مجالك",
+    icon: "bx:bx-group",
+  },
+  {
+    title: "التوسع العالمي",
+    description:
+      "التوسع العالمي - قم بتوسيع نطاق علامتك التجارية إلى الأسواق العالمية مع الحفاظ على سمعة علامتك التجارية. قم بتعظيم الوصول إلى جمهورك وترجمة رسالتك إلى أسواق جديدة.",
+    icon: "bx:bx-world",
+  },
+  {
+    title: "إنشاء المحتوى",
+    description:
+      "فيديوهاتنا ليست مصممة فقط لتصبح منتشرة —بل هي مصممة لخلق تفاعل ذي معنى وتحقيق النتائج .كل مشاهدة وتعليق ومشاركة هي جزء من استراتيجية أكبر لتنمية أعمالك.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "العلاقات العامة",
+    description: "نحن نصمم استراتيجيات العلاقات العامة التي تعزز الرؤية والسمعة من خلال التواصل الفعال والعلاقات الإعلامية. تساعد خبرتنا العملاء على بناء علاقات قوية مع الجمهور وتحقيق النجاح الدائم.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<Arlayout title="Home">
+  <Container>
+    <!-- Arabic Hero -->
+    <main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Picture
+      src={heroImage}
+      alt="Forever Viral Media Video Content"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
+    <h1 dir="rtl"
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      شريكك الاستراتيجي للنمو الشامل
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      نحن شركاء النمو الشاملون في تقديم حلول تسويقية موجهة نحو النتائج. بدءًا من الاستراتيجية الإبداعية وحتى أتمتة الذكاء الاصطناعي، نتولى كل شيء.
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="#"
+        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        target="_blank"
+        class="flex gap-1 items-center justify-center"
+        rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+
+        احجز استشارة مجانية الآن      </Link>
+
+    </div>
+  </div>
+</main>
+ <!-- Arabic Hero -->
+   <!-- Arabic Features -->
+   <div class="mt-16 md:mt-0">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+      الاكتشاف والتنفيذ والتحسين.
+    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+      تتبع جميع عروضنا هذا الإطار البسيط والقوي. وهذا يسمح لنا باقتحام مجالات جديدة بنجاح وتنفيذ المشاريع الفنية وضمان نتائج موثوقة لعملائنا.
+    </p>
+  </div>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+    {
+      features.map((item) => (
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+            <Icon class="text-white" name={item.icon} />
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+            <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  
+
+
+  <!-- Arabic Logos -->
+  <div class="mt-24">
+    <h2 class="text-center text-slate-500">الشراكات التي تغذي نجاحنا
+    </h2>
+    <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+       
+      <Icon class="size-8 md:size-12" name="simple-icons:meta" />
+      <Icon class="size-8 md:size-12" name="simple-icons:shopify" />
+      <Icon class="size-8 md:size-12" name="simple-icons:tiktok" />
+      <Icon class="size-8 md:size-12" name="simple-icons:google" />
+      <Icon class="size-8 md:size-16" name="simple-icons:youtube" />
+  
+    </div>
+  </div>
+  <!-- Arabic Logos -->
+   <div class="pt-16">
+    <h3 class="justify-center flex "> Success Stories </h3>
+    </div>
+   <!-- Arabic CTA -->  
+   <div
+  class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+  <h2 class="text-white text-4xl md:text-6xl tracking-tight">
+    رحلتك تبدأ من هنا.
+  </h2>
+  <p class="text-slate-400 mt-4 text-lg md:text-xl">
+  Speak to a team member
+  </p>
+  <div class="flex mt-5">
+    <Link href="#" style="inverted">  احجز استشارة مجانية الآن </Link>
+  </div>
+</div>
+
+  </Container>
+</Arlayout>
