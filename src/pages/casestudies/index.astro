@@ -2,11 +2,121 @@
 import Casestudy from "@components/casestudy.astro";
 import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
+import {Picture} from "astro:assets";
+import crepEscape from '@assets/clientlogos/crepescape.png';
+import auction from '@assets/clientlogos/auction1.png';
+import bins from '@assets/clientlogos/bins.png';
+import brady from '@assets/clientlogos/brady.png';
+import detail from '@assets/clientlogos/detail.png';
+import icecream from '@assets/clientlogos/icecream1.png';
+import speedy from '@assets/clientlogos/speedy.png';
+import werks from '@assets/clientlogos/werks.png';
+import Resultsamazon from '@assets/testimonial/resultsamazon.png';
+import Results250 from '@assets/testimonial/results250m.png';
+import Cleaningresults from '@assets/testimonial/resultscleaning.png';
+import Link from "@components/ui/link.astro";
+import Numbers from "@components/numbers.astro";
 ---
 
 <Layout title="Case Studies">
     <Container>
-        <Casestudy /> 
+     
+        <h3 class="text-5xl text-center pt-16 font-bold lg:tracking-tight">
+            Unlock Our Case Studies.
+           </h3> 
+           <p class="pb- pt-4 text-center ">
+Complete the form for instant access to our case studies that reveal our strategies that helped us create remarkable results for our clients            </p>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "48374137",
+    formId: "bf9ca438-c6b9-4224-ac7e-5abeea091958"
+  });
+</script>
+        <h3 class="text-5xl text-center pt-16 font-bold lg:tracking-tight">
+            Turning Goals into Results.
+           </h3> 
+           <p class="pb- pt-4 text-center ">
+            We take pride in helping our clients- from small businesses to large corporations- achieve their goals. 
+            </p>
+            
+        <div class=" sm:hidden">
+          <div class="flex">
+            <div class="min-w-40 m-10"><Picture src={crepEscape} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 m-10"><Picture src={auction} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 sm:hidden m-10"><Picture src={icecream} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 sm:hidden m-10"><Picture src={detail} alt="Forever Viral Media Video Content"></div>
+          </div>
+          <div class="flex">
+            <div class="min-w-40 m-10"><Picture src={werks} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 m-10"><Picture src={speedy} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 sm:hidden m-10"><Picture src={bins} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 sm:hidden m-10"><Picture src={brady} alt="Forever Viral Media Video Content"></div>
+          </div>
+        </div>
+        
+           
+            <div class="grid mb-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
+                <div class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl  border-2 border-black">
+                   
+                    <h3 class="text-xl font-bold p-6 ">
+                        The Miracle Grand Opening of an Amazon Liquidation Business  | 1 Day, $1,000 Budget, 50k+ Sales.
+                    </h3>
+                    <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+                        Services Provided:
+                      </p>
+                   
+                    <p class="p-3 ml-3 font-bold bg-blue-200  rounded-3xl text-center inline-block align-center padding-left-2">
+                        Campaign
+                      </p>
+                      <p class="p-3 ml-3 font-bold bg-green-200  rounded-3xl text-center inline-block align-center padding-left-2">
+                        Content Creation
+                      </p>
+                    <Picture src={Resultsamazon} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg " />
+        
+                    <p class="text-sm p-6">
+         A tight marketing budget and a small window of opportunity. We took this liquidation business to incredible feats using a clever marketing strategy that paid off big for our client., and then did it again..
+                    </p>
+                </div>
+                <div class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl  border-2 border-black">
+                    <h3 class="text-xl font-bold p-6 ">
+                    Small Business, Big Reach. | 250 Million impressions in 3 months using Tiktok.
+                    </h3>
+                    <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+                        Services Provided:
+                      </p>
+                    <p class="p-3 ml-3 font-bold bg-blue-200  rounded-3xl text-center inline-block align-center padding-left-2">
+                        Campaign
+                      </p>
+                      <p class="p-3 ml-3 font-bold bg-green-200  rounded-3xl text-center inline-block align-center padding-left-2">
+                        Content Creation
+                      </p>
+                  
+                    <Picture src={Results250} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg " />
+                    <p class="text-sm p-6">
+                        What started as a simple social media launch strategy for a small franchisee turned into a viral sensation. Leading to franchise record breaking numbers that left their corperate marketing office speechless..
+                    </p>
+                </div>
+                <div class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+                    <h3 class="text-xl font-bold p-6 ">
+                    Squeaky Clean Marketing. | Tripling a Cleaning Service's Entire Business.
+                    </h3>
+                    <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+                        Services Provided:
+                      </p>
+                    <p class="p-3 ml-3 font-bold bg-blue-200  rounded-3xl text-center inline-block align-center padding-left-2">
+                        Campaign
+                      </p>
+                    <Picture src={Cleaningresults} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg " />
+                    <p class="text-sm p-6">
+                        What started as a simple social media launch strategy for a small franchisee turned into a viral sensation. Leading to franchise record breaking numbers that left their corperate marketing office speechless..
+                    </p>
+                </div>
+                </div>
+             
+            </div>
+            <Numbers />
+        
 
     </Container>
 </Layout>
