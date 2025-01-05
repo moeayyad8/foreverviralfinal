@@ -3,7 +3,7 @@ import { Dropdown as DropdownContainer, DropdownItems } from "astro-navbar";
 const { title, lastItem, children } = Astro.props;
 ---
 
-<li class="relative text-white">
+<div class="relative text-white">
   <DropdownContainer class="group">
     <button
       class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900">
@@ -44,4 +44,4 @@ const { title, lastItem, children } = Astro.props;
       </div>
     </DropdownItems>
   </DropdownContainer>
-</li>
+</div>
