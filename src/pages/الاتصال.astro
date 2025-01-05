@@ -1,0 +1,78 @@
+---
+import Contactform from "@components/contactform.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import Arlayout from "@layouts/Arlayout.astro";
+---
+
+<Arlayout title="Contact">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">اتصل بنا
+      </Fragment>
+      <Fragment slot="desc">يُرجى الانتظار لبضع لحظات حتى يتم تحميل المخطط.
+      </Fragment>
+      
+    </Sectionhead>
+<!-- Google Calendar Appointment Scheduling begin -->
+<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_xHUcR_HBmrpDc0shmBpv1keXbp3GsWBL6bUe4PB1Am898TGMVvM-LRxm5KWvf8rNCo_9e6mo?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+<!-- end Google Calendar Appointment Scheduling -->
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">أرسل لنا بريداً إلكترونياً
+        </h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+          هل لديك ما تقوله؟ نحن هنا لمساعدتك. املأ النموذج وسيتواصل معك أحد الموظفين.
+
+        </p>
+        <h2 class="font-medium text-lg text-gray-800">الأسئلة (بالترتيب)        </h2>
+        <li class="text-lg leading-relaxed text-slate-500 mt-3">
+  
+          1. البريد الإلكتروني*
+        </li>
+        <li class="text-lg leading-relaxed text-slate-500 mt-3">
+  
+     2. الاسم الأول*        </li>
+
+        <li class="text-lg leading-relaxed text-slate-500 mt-3">
+  
+          3. الاسم العائلي
+
+
+        </li>
+
+        <li class="text-lg leading-relaxed text-slate-500 mt-3">
+  
+          4. اسم الشركة
+
+        </li>
+        <li class="text-lg leading-relaxed text-slate-500 mt-3">
+  
+          5. رقم الهاتف*
+
+        </li>
+        <li class="text-lg leading-relaxed text-slate-500 mt-3">
+  
+          6. الإيرادات الشهرية المقدرة*
+
+        </li>
+        <li class="text-lg leading-relaxed text-slate-500 mt-3">
+  
+          7.    ميزانية الإعلانات الشهرية*
+        </li>
+  
+        </div>
+      <div>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "48374137",
+            formId: "bf9ca438-c6b9-4224-ac7e-5abeea091958"
+          });
+        </script>
+      </div>
+    </div>
+  </Container>
+</Arlayout>

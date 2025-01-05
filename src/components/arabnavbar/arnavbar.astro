@@ -8,12 +8,12 @@ import fvmLogo from "assets/forevervirallogo.svg";
 
 const menuitems = [
   {
-    title: "شركات",
+    title: "الخدمات",
     path: "#",
     children: [
-      { title: "الأتمتة", path: "ar/automation" },
-      { title: "الحملات التسويقية", path: "ar/campaigns" },
-      { title: "إنشاء المحتوى", path: "ar/content" },
+      { title: "الأتمتة", path: "/الأتمتة" },
+      { title: "الحملات التسويقية", path: "/الحملات-الإعلانية" },
+      { title: "إنشاء المحتوى", path: "/المحتوى" },
     ],
   },
   /*
@@ -26,7 +26,7 @@ const menuitems = [
       { title: "Tiktok LIVE Management", path: "/404" },
     ],
   },
-  */
+
  
   {
     title: "النتائج",
@@ -37,13 +37,14 @@ const menuitems = [
     title: "الدراسات",
     path: "/studies",
   },
+    */
   {
-    title: "نبذة عنا ",
-    path: "/about",
+    title: "حول",
+    path: "/حول",
   },
   {
     title: "الاتصال",
-    path: "/contact",
+    path: "/الاتصال",
   },
 ];
 ---
@@ -52,7 +53,7 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
+        <a href="/دول-الخليج" class="text-lg"
           >
           <Picture
       src={fvmLogo}
@@ -102,7 +103,7 @@ const menuitems = [
           <Dropdown
           title="Languages"
           children={[
-            { title: "Arabic", path: "/ar" },
+            { title: "Arabic", path: "/دول-الخليج" },
             { title: "English", path: "/" },
           ]}
           lastItem={true}
@@ -115,7 +116,7 @@ const menuitems = [
         <Dropdown
         title="Languages"
         children={[
-          { title: "Arabic", path: "/ar" },
+          { title: "Arabic", path: "/دول-الخليج" },
           { title: "English", path: "/" },
         ]}
         lastItem={true}

@@ -1,0 +1,273 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Campaignfeatures from "@components/campaigns/campaignfeatures.astro";
+import Service from "@components/campaigns/campaignhero.astro";
+import Layout from "@layouts/Layout.astro";
+import Salestext from "@components/campaigns/campaignsalestext.astro"
+import Logos from "@components/campaigns/campaignlogos.astro";
+import CampaignTestimonials from "@components/campaigns/campaigntestimonials.astro"
+import Casestudy from "@components/casestudy.astro";
+import { Picture } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import heroImage from "assets/campaignhero.png";
+import Link from "@components/ui/link.astro";
+
+import Results250 from "assets/testimonial/results250m.png";
+import Casestudy2 from "assets/casestudies/casestudy2.png";
+import Resultsamazon from "assets/testimonial/resultsamazon.png";
+import {Picture} from "astro:assets";
+import Cleaningresults from "assets/testimonial/resultscleaning.png";
+
+import crepEscape from "assets/clientlogos/crepescape.png";
+import auction from "assets/clientlogos/auction1.png";
+import bins from "assets/clientlogos/bins.png";
+import brady from "assets/clientlogos/brady.png";
+import detail from "assets/clientlogos/detail.png";
+import icecream from "assets/clientlogos/icecream1.png";
+import speedy from "assets/clientlogos/speedy.png";
+import werks from "assets/clientlogos/werks.png";
+import Arlayout from "@layouts/Arlayout.astro";
+
+const features = [
+  {
+    title: "تصميم الإستراتيجية المبنية على البيانات",
+    description: "نقوم بتحليل حملاتك السابقة وبيانات الجمهور واتجاهات السوق للكشف عن الفرص. تم تصميم إستراتيجيتنا المخصصة لتتوافق مع أهدافك.",
+    icon: "bx:dice-1",
+  },
+  {
+    title: "التصميمات والاستهدافات عالية التأثير",
+    description:
+      "نقوم بإنشاء إعلانات تجذب الانتباه وتجذب التحويلات. بعد ذلك، نقوم بإعداد حملاتك بدقة، لاستهداف الجمهور المناسب وزيادة موضع الإعلان.",
+    icon: "bx:dice-2",
+  },
+  {
+    title: "التحسين المستمر والقياس",
+    description:
+      "بعد الإطلاق، نقوم باستمرار بتحسين الحملات وتحسين الاستهداف واختبار التصميمات وتوسيع نطاق ما ينجح، مما يضمن أفضل عائد استثمار ممكن في كل مرحلة.",
+    icon: "bx:dice-3",
+  },
+  
+];
+---
+
+<Arlayout title="Campaigns">
+  <Container>
+    <!-- Hero -->
+    <main
+    class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24" dir="rtl">
+    <div class="py-6 md:order-1 hidden md:block">
+      <Picture
+        src={heroImage}
+        alt="Forever Viral Media Video Content"
+        widths={[200, 400, 600]}
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+      />
+    </div>
+    <div>
+      <h1
+        class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+        سيطر على الأسواق من خلال الإعلانات التي تحول المشاهدين إلى عملاء      </h1>
+      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+        من خلال التركيز على الاستراتيجيات المثبتة وفهم جمهورك، نساعدك في تصميم حملات مؤثرة تحقق نتائج حقيقية. تخلَّص من التخمين في الإعلانات وانجز بثقة.      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <Link
+          href="/contact"
+         
+          target="_blank"
+          class="flex gap-1 items-center justify-center"
+          rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+  
+          تحديد موعد
+        </Link>
+        
+      </div>
+    </div>
+  </main>
+  
+     <!-- Hero -->
+<!-- Logos -->
+<div class="mt-2" dir="rtl">
+  <h2 class="text-center text-slate-500">الشراكات الإستراتيجية التي تدعم نجاحنا.</h2>
+  <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+    <Icon class="size-8 md:size-12" name="simple-icons:google" />
+    <Icon class="size-8 md:size-16" name="simple-icons:youtube" />
+    <Icon class="size-8 md:size-12" name="simple-icons:meta" />
+    <Icon class="size-8 md:size-12" name="simple-icons:shopify" />
+    <Icon class="size-8 md:size-12" name="simple-icons:tiktok" />
+
+  </div>
+</div>
+
+ <!-- Logos -->
+<!-- Features -->
+
+<div dir="rtl" class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+ <!-- Features -->
+  <!-- Sales Text  -->
+  <div dir="rtl" class="pt-24 pb-12 mt-16 md:mt-0">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+      الإستراتيجية والتنفيذ السلس    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+      مدعومين بتكتيكات مجربة وفريق إبداعي عالمي المستوى، نقوم بصياغة استراتيجيات مصممة خصيصًا لأهدافك الفريدة وتنفيذها بدقة.</div>
+  
+    <!-- 1st Grid -->
+  <div class="grid grid-cols-2 grid-rows-2 gap-8">
+    <!-- 1st card -->
+    <div class="bg-gray-50 shadow-lg text-center p-8 gap-8 mt-16 md:mt-0 rounded-tl-3xl rounded-br-3xl">
+      <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+        موثق
+      </p>
+      <h2 class="pt-2 text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+        سجل حافل بالنجاح
+      </h2>
+      <p class="pt-2 text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+        نتائجنا تتحدث عن نفسها. بفضل مجموعة من العملاء الراضين والحملات الناجحة، اكتسبنا سمعة طيبة في تقديم ما نعد به وأكثر   </p>
+    </div>
+  <!-- 2nd card -->
+    <div class="bg-gray-50 shadow-lg text-center p-8 mt-16 rounded-tl-3xl rounded-br-3xl md:mt-0"> 
+      <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+        ثقة
+      </p>
+      <h2 class="pt-2 text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+        الشفافية الكاملة
+      </h2>
+      <p class="pt-2 text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+        نحن نؤمن بالصدق التام. ستعرف دائمًا أين يتجه استثمارك وكيف يعمل. من خلال التقارير التفصيلية والتحديثات المنتظمة، لن تترك أبدًا في حيرة بشأن النتائج.   </p>
+    </div>
+  <!-- 3rd card -->
+    <div class="bg-gray-50 shadow-lg text-center p-8 mt-16 rounded-tl-3xl rounded-br-3xl md:mt-0"> 
+      <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+        التخصيص
+      </p>
+      <h2 class="pt-2 text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+        استراتيجيات مخصصة
+      </h2>
+      <p class="pt-2 text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+        لا يوجد شركتان متشابهتان، ولا يفرض أن تكون حملاتك متشابهة. نحن نصمم استراتيجيات مخصصة بناءً على بحث متعمق ورؤى قائمة على البيانات وأهدافك المحددة. من الفكرة إلى التنفيذ، لا نترك شيئًا للصدفة، مما يضمن وصول رسالتك إلى الهدف في كل مرة.   </p>
+    </div>
+  <!-- 4th card -->
+    <div class="bg-gray-50 shadow-lg text-center p-8 mt-16 rounded-tl-3xl rounded-br-3xl md:mt-0">
+      <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+        تحسين عائد الاستثمار
+      </p>
+      <h2 class="pt-2 text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+        التركيز على القيمة الدائمة
+      </h2>
+      <p class="pt-2 text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+        لا يقتصر نهجنا على جذب الانتباه فقط، بل يتعلق أيضًا بإنشاء علاقات معها. من خلال فهم احتياجات جمهورك ودوافعه، نصمم حملات تحول الزوار الجدد إلى عملاء مدى الحياة. معنا، كل تفاعل يبني الثقة والولاء.  </p>
+    </div>
+  </div>
+  
+
+  <!-- Sales Text  -->
+<!-- Testimonials -->
+ <div dir="rtl">
+  <div class="flex">
+    <div class="min-w-40 m-10"><Picture src={crepEscape} alt="Forever Viral Media Video Content"></div>
+    <div class="min-w-40 m-10"><Picture src={auction} alt="Forever Viral Media Video Content"></div>
+    
+        <div class="min-w-40 m-10"><Picture src={icecream} alt="Forever Viral Media Video Content"></div>
+    <div class="min-w-40 m-10"><Picture src={detail} alt="Forever Viral Media Video Content"></div>                  
+    </div>
+    <div class="flex">
+    <div class="min-w-40 m-10"><Picture src={werks} alt="Forever Viral Media Video Content"></div>
+        <div class="min-w-40 m-10"><Picture src={speedy} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 m-10"><Picture src={bins} alt="Forever Viral Media Video Content"></div>
+                <div class="min-w-40 m-10"><Picture src={brady} alt="Forever Viral Media Video Content"></div>
+               
+    </div>
+   
+  <div class="grid mb-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
+    <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        الافتتاح الكبير المعجزة لأعمال التصفية في أمازون | يوم واحد، ميزانية 1000 دولار، أكثر من 50 ألف دولار مبيعات 50 ألف دولار
+      </h3>
+      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+        الخدمات المقدمة:
+      </p>
+      <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        الحملة الإعلانية
+      </p>
+      <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        إنشاء المحتوى
+      </p>
+      <Picture src={Resultsamazon} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+      <p class="text-sm p-6">
+        ميزانية تسويقية محدودة وفرصة صغيرة. لقد ارتقينا بأعمال التصفية هذه إلى إنجازات مذهلة باستخدام استراتيجية تسويقية ذكية آتت ثمارها الكبيرة لعميلنا.        </p>
+    </a>
+  
+    <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        أعمال صغيرة، وصول كبير. | 250 مليون ظهور في 3 أشهر باستخدام Tiktok.
+      </h3>
+      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+        الخدمات المقدمة:
+      </p>
+      <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        الحملة الإعلانية
+      </p>
+      <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        إنشاء المحتوى
+      </p>
+      <Picture src={Results250} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+      <p class="text-sm p-6">
+        ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+    </a>
+  
+    <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        | تسويق نظيف جداً | مضاعفة أعمال خدمات التنظيف بأكملها ثلاث مرات.
+  
+      </h3>
+      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+        الخدمات المقدمة:
+  
+      </p>
+      <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        الحملة الإعلانية
+      </p>
+      <Picture src={Cleaningresults} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+      <p class="text-sm p-6">
+        ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+    </a>
+  </div>
+ </div>
+
+
+ <!-- Testimonials -->
+ 
+<!-- CTA -->
+<div dir="rtl"
+class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+<h2 class="text-white text-4xl md:text-6xl tracking-tight">
+  رحلتك تبدأ هنا
+</h2>
+<p class="text-slate-400 mt-4 text-lg md:text-xl">
+  تحدث إلى أحد أعضاء الفريق
+</p>
+<div class="flex mt-5">
+  <Link href="/contact" style="inverted">تحديد موعد</Link>
+</div>
+</div>
+
+ <!-- CTA -->
+    
+  </Container>
+</Arlayout>

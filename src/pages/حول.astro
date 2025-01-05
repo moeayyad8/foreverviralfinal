@@ -5,14 +5,14 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Moe from "@assets/testimonial/moeayyad.png"
-
+import Arlayout from "@layouts/Arlayout.astro";
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 ---
 
-<Layout title="About">
+<Arlayout title="About">
   <Container>
    
 
@@ -20,55 +20,42 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     
       
       <h2 class="font-bold text-4xl text-gray-800 flex justify-center" >
-        Our Core Values.
+        قيمنا الأساسية
       </h2>
       <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Innovation-Driven Growth
+        النمو القائم على الابتكار
       </h2>
       <p class="text-sm text-gray-800 flex justify-center" >
-        We embrace cutting-edge strategies and technologies to help brands stay ahead in the fast-evolving digital landscape.
+        نحن نتبنى استراتيجيات وتقنيات متطورة لمساعدة العلامات التجارية على البقاء في الصدارة في المشهد الرقمي السريع والمتطور.
       </p>
        <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Customer-Centric Excellence
+        التميز المرتكز على العملاء
       </h2>
       <p class="text-sm text-gray-800 flex justify-center" >
-        Our clients' success is our priority. We are committed to delivering tailored solutions that exceed expectations.
+        نجاح عملائنا هو أولويتنا. نحن ملتزمون بتقديم حلول مصممة خصيصًا تتجاوز التوقعات.      </p>
+      <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
+        الثقة والأمانة
+      </h2>
+      <p class="text-sm text-gray-800 flex justify-center" >
+        نحن نعمل بشكل احترافي، ونبني الثقة من خلال التواصل المباشر والممارسات الأخلاقية.
       </p>
       <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Integrity and Transparency
+        التعاون والعمل الجماعي
       </h2>
       <p class="text-sm text-gray-800 flex justify-center" >
-        We operate with honesty, building trust through open communication and ethical practices.
-      </p>
+        نحن نقدر قوة وجهات النظر المتنوعة، والعمل مع العملاء وداخل فريقنا لتحقيق أفضل النتائج      </p>
       <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Collaboration and Teamwork
-      </h2>
+        المرونة والقدرة على الاستمرار      </h2>
       <p class="text-sm text-gray-800 flex justify-center" >
-        We value the power of diverse perspectives, working together with clients and within our team to achieve outstanding results.
-      </p>
-      <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Adaptability and Resilience
-      </h2>
-      <p class="text-sm text-gray-800 flex justify-center" >
-        In a rapidly changing world, we remain flexible and proactive, ensuring we’re always ready for new challenges and opportunities.
+        في عالم سريع التغير، نحرص على أن نتمتع بالمرونة والنشاط، مما يضمن استعدادنا دائمًا للتحديات والفرص الجديدة.
       </p>
       <h3 class="pt-12 text-lg font-semibold text-slate-500">
-        Founders Letter
-      </h3>
+        تمكين العالم من أن يكون منتشر إلى الأبد.      </h3>
     
       <p class="text-lg leading-relaxed text-slate-500">
-        Forever Viral was founded on the principle that everyone has a story to tell. We believe that the power of storytelling can change the world. All business is personal, and we strive to create meaningful connections with our clients and partners. I aim to build a company that is not only successful but also a force for good in the world. We are committed to creating a positive impact on the lives of our employees, clients, and the world at large.  My hope is that our clients will look back on their time with us as a turning point in their business, a time when they discovered their true potential and achieved their dreams. I am excited to see what the future holds for Forever Viral and the incredible people we work with.
-      </p>
-      <h2 class=" pt-24 font-bold text-3xl text-gray-800">
-        Empowering the world to be Forever Viral.
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        At Forever Viral, we are at the forefront of the digital marketing revolution, creating and managing content that captures attention and drives engagement. With over four years of industry expertise, we have generated more than 2 billion organic views, solidifying our reputation as leaders in crafting viral success stories.
-
-        Our unique approach bridges the gap between creators and companies. We craft strategies that deliver exceptional results for everyone involved.
-        
-        We pride ourselves on our versatility, having worked with a wide array of niches—from lifestyle and fashion to tech, fitness, and beyond. 
-      </p>
+        نحن على أعلى مستوى في مجال التسويق الرقمي، حيث نقوم بإنشاء وإدارة المحتوى الذي يجذب الانتباه ويحفز المشاركة. مع أكثر من أربع سنوات من الخبرة في الصناعة، قمنا بتوليد أكثر من 2 مليار مشاهدة عضوية، مما عزز سمعتنا كشركة متفوقة في صياغة قصص النجاح. يجمع نهجنا بين المؤثرين والشركات للحصول على أفضل النتائج. نحن نصمم استراتيجيات تحقق نتائج استثنائية للجميع. نحن نفخر بتنوعنا، بعد أن عملنا مع مجموعة واسعة من المجالات - من أسلوب الحياة والأزياء إلى التكنولوجيا واللياقة البدنية والمزيد.      </p>
+     
+  
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       <div>
@@ -105,4 +92,4 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   
   </Container>
   
-</Layout>
+</Arlayout>

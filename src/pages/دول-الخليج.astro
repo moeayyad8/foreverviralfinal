@@ -11,6 +11,20 @@ import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 import Arlayout from "@layouts/Arlayout.astro";
 
+import Results250 from "assets/testimonial/results250m.png";
+import Casestudy2 from "assets/casestudies/casestudy2.png";
+import Resultsamazon from "assets/testimonial/resultsamazon.png";
+import {Picture} from "astro:assets";
+import Cleaningresults from "assets/testimonial/resultscleaning.png";
+
+import crepEscape from "assets/clientlogos/crepescape.png";
+import auction from "assets/clientlogos/auction1.png";
+import bins from "assets/clientlogos/bins.png";
+import brady from "assets/clientlogos/brady.png";
+import detail from "assets/clientlogos/detail.png";
+import icecream from "assets/clientlogos/icecream1.png";
+import speedy from "assets/clientlogos/speedy.png";
+import werks from "assets/clientlogos/werks.png";
 
 const features = [
   {
@@ -132,8 +146,80 @@ const features = [
   </div>
   <!-- Arabic Logos -->
    <div class="pt-16">
-    <h3 class="justify-center flex "> Success Stories </h3>
+    
     </div>
+
+    <!-- Arabic logos  -->
+    <div class="flex">
+      <div class="min-w-40 m-10"><Picture src={crepEscape} alt="Forever Viral Media Video Content"></div>
+      <div class="min-w-40 m-10"><Picture src={auction} alt="Forever Viral Media Video Content"></div>
+      
+          <div class="min-w-40 m-10"><Picture src={icecream} alt="Forever Viral Media Video Content"></div>
+      <div class="min-w-40 m-10"><Picture src={detail} alt="Forever Viral Media Video Content"></div>                  
+      </div>
+      <div class="flex">
+      <div class="min-w-40 m-10"><Picture src={werks} alt="Forever Viral Media Video Content"></div>
+          <div class="min-w-40 m-10"><Picture src={speedy} alt="Forever Viral Media Video Content"></div>
+              <div class="min-w-40 m-10"><Picture src={bins} alt="Forever Viral Media Video Content"></div>
+                  <div class="min-w-40 m-10"><Picture src={brady} alt="Forever Viral Media Video Content"></div>
+                 
+      </div>
+     
+    <div class="grid mb-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
+      <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          الافتتاح الكبير المعجزة لأعمال التصفية في أمازون | يوم واحد، ميزانية 1000 دولار، أكثر من 50 ألف دولار مبيعات 50 ألف دولار
+        </h3>
+        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+          الخدمات المقدمة:
+        </p>
+        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          الحملة الإعلانية
+        </p>
+        <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          إنشاء المحتوى
+        </p>
+        <Picture src={Resultsamazon} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          ميزانية تسويقية محدودة وفرصة صغيرة. لقد ارتقينا بأعمال التصفية هذه إلى إنجازات مذهلة باستخدام استراتيجية تسويقية ذكية آتت ثمارها الكبيرة لعميلنا.        </p>
+      </a>
+
+      <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          أعمال صغيرة، وصول كبير. | 250 مليون ظهور في 3 أشهر باستخدام Tiktok.
+        </h3>
+        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+          الخدمات المقدمة:
+        </p>
+        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          الحملة الإعلانية
+        </p>
+        <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          إنشاء المحتوى
+        </p>
+        <Picture src={Results250} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+      </a>
+
+      <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          | تسويق نظيف جداً | مضاعفة أعمال خدمات التنظيف بأكملها ثلاث مرات.
+
+        </h3>
+        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+          الخدمات المقدمة:
+
+        </p>
+        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          الحملة الإعلانية
+        </p>
+        <Picture src={Cleaningresults} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+      </a>
+    </div>
+     <!-- Arabic logos  -->
    <!-- Arabic CTA -->  
    <div
   class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
@@ -141,7 +227,7 @@ const features = [
     رحلتك تبدأ من هنا.
   </h2>
   <p class="text-slate-400 mt-4 text-lg md:text-xl">
-  Speak to a team member
+    تحدث إلى أحد أعضاء الفريق
   </p>
   <div class="flex mt-5">
     <Link href="#" style="inverted">  احجز استشارة مجانية الآن </Link>

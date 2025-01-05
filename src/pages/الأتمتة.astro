@@ -7,7 +7,20 @@ import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 import LaythA from "@assets/testimonial/laytha.png";
 import AlinaB from "@assets/testimonial/alinab.png";
+import Results250 from "assets/testimonial/results250m.png";
+import Casestudy2 from "assets/casestudies/casestudy2.png";
+import Resultsamazon from "assets/testimonial/resultsamazon.png";
+import {Picture} from "astro:assets";
+import Cleaningresults from "assets/testimonial/resultscleaning.png";
 
+import crepEscape from "assets/clientlogos/crepescape.png";
+import auction from "assets/clientlogos/auction1.png";
+import bins from "assets/clientlogos/bins.png";
+import brady from "assets/clientlogos/brady.png";
+import detail from "assets/clientlogos/detail.png";
+import icecream from "assets/clientlogos/icecream1.png";
+import speedy from "assets/clientlogos/speedy.png";
+import werks from "assets/clientlogos/werks.png";
 const features = [
   {
     title: "اكتشاف",
@@ -63,8 +76,8 @@ const features = [
       <div class="mt-6 flex flex-col sm:flex-row gap-3"
       dir="rtl">
         <Link
-          href="#"
-          href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+          href="/contact"
+       
           target="_blank"
           class="flex gap-1 items-center justify-center"
           rel="noopener">
@@ -92,76 +105,7 @@ const features = [
   
 
     
-  <div class="mt-5 grid sm:grid-cols-2 md:grid-cols-3 gap-5 pt-16" dir="rtl">
-    <div class="rounded-lg p-6" dir="rtl"> 
-        <h2 class="text-3xl font-semibold" dir="rtl">
-          جرب قوة أتمتة الأعمال
-         </h2>   
-        <p>
-          خلينا نبسط عملك لتحقيق النجاح، واستمتع بعصر جديد من الأتمتة كما فعل بعض عملائنا. 
-        </p>
-    </div>
-    <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg" dir="rtl">
-        <div class="grid grid-flow-col" dir="rtl">
-            
-            <Picture
-            src={AlinaB}
-            alt="Automation testimonials"
-            widths={[200,200,200]}
-            sizes="(max-width: 800px) 100vw, 600px"
-            loading="eager"
-            format="avif"
-            dir="rtl"
-          />
-        
-        <div class="" dir="rtl">
-            <h4 class="text-2xl font-semibold" dir="rtl">
-              ألينا
-            </h4>
-            <p dir="rtl">
-              شركة ناشئة لإنقاص الوزن
-
-            </p>
-            <p class=""dir="rtl">
-              شهادة تم التقاطها عبر مكالمة هاتفية.             </p>   
-        </div>        
-    </div>
-        
-        <p class="text-lg pt-2 mt-2" dir="rtl">
-          بمساعدة اف في ام  ، قمنا بتنفيذ أتمتة دعم العملاء مما أدى إلى زيادة وقت الاستجابة لدينا بنسبة 50%. العملاء قد لاحظو الفرق بشكل فوري     </p> 
-    </div>
-    <div>
-      <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl rounded-tr-3xl p-5 text-left shadow-lg" dir="rtl">
-        <div class="grid grid-flow-col">
-            
-                <Picture
-                src={LaythA}
-                alt="Automation testimonials"
-                widths={[200,200,200]}
-                sizes="(max-width: 800px) 100vw, 600px"
-                loading="eager"
-                format="avif"
-                dir="rtl"
-              />
-            
-            <div dir="rtl">
-                <h4 class="text-2xl font-semibold"
-                dir="rtl">
-                  ليث
-                </h4>
-                <p dir="rtl">
-                  مدير فريق المبيعات                </p>
-                <p class="" dir="rtl">
-                  شهادة تم التقاطها عبر الواتساب.
-                </p> 
-            </div>        
-        </div>
-       
-        <p class="text-lg pt-2 mt-2" dir="rtl">
-          لقد وفرت علينا شركة اف في ام 20 ساعة أسبوعيًا من خلال أتمتة عملية دمج العملاء. يركز فريقنا الآن على تنمية الأعمال! كما يسعد الموظفون بالحصول على المزيد من الفرص مع توفير وقتهم.        </p> 
-    </div>
-    </div>
-  </div>
+  
   <!-- Arabic Testimonials -->
   <!-- Arabic Features -->
      <!-- Three -->
@@ -305,6 +249,75 @@ const features = [
   
 
    <!-- Arabic Salestext -->
+   <div class="flex">
+    <div class="min-w-40 m-10"><Picture src={crepEscape} alt="Forever Viral Media Video Content"></div>
+    <div class="min-w-40 m-10"><Picture src={auction} alt="Forever Viral Media Video Content"></div>
+    
+        <div class="min-w-40 m-10"><Picture src={icecream} alt="Forever Viral Media Video Content"></div>
+    <div class="min-w-40 m-10"><Picture src={detail} alt="Forever Viral Media Video Content"></div>                  
+    </div>
+    <div class="flex">
+    <div class="min-w-40 m-10"><Picture src={werks} alt="Forever Viral Media Video Content"></div>
+        <div class="min-w-40 m-10"><Picture src={speedy} alt="Forever Viral Media Video Content"></div>
+            <div class="min-w-40 m-10"><Picture src={bins} alt="Forever Viral Media Video Content"></div>
+                <div class="min-w-40 m-10"><Picture src={brady} alt="Forever Viral Media Video Content"></div>
+               
+    </div>
+   
+  <div class="grid mb-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
+    <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        الافتتاح الكبير المعجزة لأعمال التصفية في أمازون | يوم واحد، ميزانية 1000 دولار، أكثر من 50 ألف دولار مبيعات 50 ألف دولار
+      </h3>
+      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+        الخدمات المقدمة:
+      </p>
+      <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        الحملة الإعلانية
+      </p>
+      <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        إنشاء المحتوى
+      </p>
+      <Picture src={Resultsamazon} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+      <p class="text-sm p-6">
+        ميزانية تسويقية محدودة وفرصة صغيرة. لقد ارتقينا بأعمال التصفية هذه إلى إنجازات مذهلة باستخدام استراتيجية تسويقية ذكية آتت ثمارها الكبيرة لعميلنا.        </p>
+    </a>
+
+    <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        أعمال صغيرة، وصول كبير. | 250 مليون ظهور في 3 أشهر باستخدام Tiktok.
+      </h3>
+      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+        الخدمات المقدمة:
+      </p>
+      <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        الحملة الإعلانية
+      </p>
+      <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        إنشاء المحتوى
+      </p>
+      <Picture src={Results250} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+      <p class="text-sm p-6">
+        ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+    </a>
+
+    <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        | تسويق نظيف جداً | مضاعفة أعمال خدمات التنظيف بأكملها ثلاث مرات.
+
+      </h3>
+      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+        الخدمات المقدمة:
+
+      </p>
+      <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+        الحملة الإعلانية
+      </p>
+      <Picture src={Cleaningresults} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+      <p class="text-sm p-6">
+        ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+    </a>
+  </div>
  <!-- Arabic CTA -->
  <div dir="rtl"
  class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
@@ -315,7 +328,7 @@ const features = [
   تحدث إلى أحد أعضاء الفريق
  </p>
  <div dir="rtl"  class="flex mt-5">
-   <Link dir="rtl" href="#" style="inverted">احجز استشارتك المجانية</Link>
+   <Link dir="rtl" href="/contact" style="inverted">احجز استشارتك المجانية</Link>
  </div>
 </div>
 <!-- Arabic CTA -->

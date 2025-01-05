@@ -1,0 +1,285 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Automationfeatures from "@components/contentcreation/contentfeatures.astro";
+import Service from "@components/contentcreation/contenthero.astro";
+import Layout from "@layouts/Layout.astro";
+import Salestext from "@components/contentcreation/contentsalestext.astro"
+import Logos from "@components/contentcreation/contentlogos.astro";
+import Casestudy from "@components/casestudy.astro";
+import Link from "@components/ui/link.astro";
+import Results250 from "assets/testimonial/results250m.png";
+import Casestudy2 from "assets/casestudies/casestudy2.png";
+import Resultsamazon from "assets/testimonial/resultsamazon.png";
+import {Picture} from "astro:assets";
+import Cleaningresults from "assets/testimonial/resultscleaning.png";
+import heroImage from "@assets/contentcreationhero.png"
+import crepEscape from "assets/clientlogos/crepescape.png";
+import auction from "assets/clientlogos/auction1.png";
+import bins from "assets/clientlogos/bins.png";
+import brady from "assets/clientlogos/brady.png";
+import detail from "assets/clientlogos/detail.png";
+import icecream from "assets/clientlogos/icecream1.png";
+import speedy from "assets/clientlogos/speedy.png";
+import werks from "assets/clientlogos/werks.png";
+import Arlayout from "@layouts/Arlayout.astro";
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: " تحليل الفئة المستهدفة ",
+    description: "المحتوى القصير هو المفتاح لتحقيق النجاح القابل للتوسع. تبدأ استراتيجيتنا من خلال وضع عملك بشكل استراتيجي ضمن فئة مستهدفة ناجحة على وسائل التواصل الاجتماعي. يضمن هذا النهج المستهدف أن يتفاعل جمهورك المتفاعل مع محتواك، مما يزيد من الوصول ويحقق نتائج مؤثرة.",
+
+    icon: "bx:dice-1",
+  },
+  {
+    title: "الاستراتيجية الإبداعية",
+    description:
+      "   نُشعل علامتك التجارية باستراتيجية إبداعية قوية. نكتشف أفكارًا جديدة وجذابة تتناغم مع جمهورك. يقوم فريقنا بإعداد نصوص مؤثرة وتحرير رسالتك بعناية لتحقيق أقصى تأثير. ",
+    icon: "bx:dice-2",
+  },
+  {
+    title: "التحسين والتوسيع",
+    description:
+      "نحن نتجاوز التنفيذ الأساسي. من خلال تحليل بياناتك وتحديد المجالات الرئيسية للتحسين، نطور استراتيجيات مدفوعة بالبيانات لتعظيم وصولك وتفاعلك. يشمل ذلك تحسين تقويم المحتوى الخاص بك، وتحسين ملفاتك الشخصية على وسائل التواصل الاجتماعي، وضمان تميز علامتك التجارية من أجل نمو مستدام.",
+    icon: "bx:dice-3",
+  },
+  
+];
+---
+
+<Arlayout title="Content">
+  <Container>
+    <!--Service-->
+    <main dir="rtl"
+    class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+    <div class="py-6 md:order-1 hidden md:block">
+      <Picture
+        src={heroImage}
+        alt="Forever Viral Media Video Content"
+        widths={[200, 400, 600]}
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+      />
+    </div>
+    <div>
+      <h1
+        class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+        أفضل استراتيجية محتوى في فئتها </h1>
+      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+        من خلال التركيز على الاستراتيجيات المثبتة وفهم جمهورك، نساعدك في تصميم حملات مؤثرة تحقق نتائج حقيقية. تخلَّص من التخمين في الإعلانات واستمر بثقة.
+ </p>
+ <!-- above section is a double of campaigns paragraph -->
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <Link
+          href="/contact"
+          target="_blank"
+          class="flex gap-1 items-center justify-center"
+          rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+  
+          تحديد موعد
+        </Link>
+       
+      </div>
+    </div>
+  </main>
+     <!--Service-->
+   
+    <!--Logos -->
+
+    <div dir="rtl" class="mt-2">
+      <h2 class="text-center text-slate-500">الشراكات الإستراتيجية التي تدعم نجاحنا.</h2>
+      <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+        <Icon class="size-8 md:size-12" name="simple-icons:google" />
+        <Icon class="size-8 md:size-16" name="simple-icons:youtube" />
+        <Icon class="size-8 md:size-12" name="simple-icons:meta" />
+        <Icon class="size-8 md:size-12" name="simple-icons:shopify" />
+        <Icon class="size-8 md:size-12" name="simple-icons:tiktok" />
+    
+      </div>
+    </div>
+     <!--Logos -->
+    
+
+    <!--features -->
+    <div dir='rtl' class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+      {
+        features.map((item) => (
+          <div class="flex gap-4 items-start">
+            <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+              <Icon class="text-white" name={item.icon} />
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+              <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+     <!--features -->
+
+     <!--salestext -->
+
+     <div dir="rtl">
+      <div class="pt-24 mt-16 md:mt-0">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          ركائز نظام المحتوى عالي التأثير لدينا
+        </h2>
+        <p class="text-lg mt-4 text-slate-600">
+          نظام المحتوى لدينا مبني على ركائز مثبتة أثبتت جدواها وحققت لعملائنا مليارات المشاهدات وحققت لعملائنا مبيعات بالملايين. من خلال الجمع بين تحديد الموقع الاستراتيجي المتخصص والتميز الإبداعي والتحسين القائم على البيانات، نضمن أن تحقق علامتك التجارية انتشاراً هائلاً ونجاحاً على المدى الطويل.  </p>
+      </div>
+      
+      <!--Card -->
+      <div class="pt-12">
+        
+        <div class="bg-gray-50 shadow-lg text-center p-8 gap-8 mt-16 md:mt-0 rounded-tl-3xl rounded-br-3xl "> 
+          <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+            الجودة الأصيلة
+          </p>
+          <h2 class="text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+            هيمن على الخلاصات بمرئيات لا تُنسى
+          </h2>
+        <p class="pt-2 text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+          لا تكتفي مقاطع الفيديو التي نقدمها بالحصول على مشاهدات - بل تتذكرها. من خلال الإنتاج السينمائي عالي الجودة والإبداع المتطور، نصنع محتوى يجذب الانتباه ويجعل جمهورك يعود إليك مرة أخرى للحصول على المزيد. هذا ليس مجرد فيديو - إنه علامتك التجارية التي ترتقي بعلامتك التجارية.</p>
+        </div>
+      </div> 
+      
+      
+      <!--Card -->
+      <div class="pt-12">
+        <div class="bg-gray-50 shadow-lg text-center p-8 gap-8 mt-16 md:mt-0 rounded-tl-3xl rounded-br-3xl"> 
+          <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+            التحرير
+          </p>
+          <h2 class="text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+            اجعل كل ثانية من العمل بجدية أكبر </h2>
+        <p class="text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+          في عالم يتسم بقصر مدة الانتباه، نجعل كل لقطة مهمة. بدءاً من اللقطة الأولى وحتى الدعوة النهائية لاتخاذ إجراء، تم تصميم مقاطع الفيديو الخاصة بنا لتأسر انتباه المشاهدين وتبلغهم وتحوّلهم. وسواء كان مقطع تيك توك أو تحفة فنية طويلة، فإننا نحول الثواني إلى تأثير.</p>
+        </div>
+      </div> 
+      
+      <div class="pt-12">
+        <div class="bg-gray-50 shadow-lg text-center p-8 gap-8 mt-16 md:mt-0 rounded-tl-3xl rounded-br-3xl"> 
+          <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+            الاستراتيجية
+          </p>
+          <h2 class="text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+            ليس فقط فيروسي - قيم </h2>
+        <p class="text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+          لم تُصمَّم مقاطع الفيديو الخاصة بنا لتنتشر على نطاق واسع فحسب، بل صُمِّمت لتحقيق تفاعل هادف وتحقيق نتائج. كل مشاهدة وتعليق ومشاركة هي جزء من استراتيجية أكبر لتنمية أعمالك.
+        </p>  
+        </div>
+      </div>
+      
+      <!--Card -->
+      <div class="pt-12">
+        <div class="bg-gray-50 shadow-lg text-center p-8 gap-8 mt-16 md:mt-0 rounded-tl-3xl rounded-br-3xl"> 
+          <p class="p-2 font-bold bg-green-100 rounded-3xl text-center inline-block align-center padding-left-2">
+            الأنظمة
+          </p>
+          <h2 class="text-4xl lg:text-4xl xl:text-4xl font-semibold lg:tracking-tight xl:tracking-tighter">
+            نتائج مدعومة بالابتكار  </h2>
+        <p class="text-lg lg:text-lg xl:text-lg lg:tracking-tight xl:tracking-tighter">
+          يستفيد فريقنا من التحليلات المتقدمة وسرد القصص الإبداعية والاستراتيجيات الخاصة بالمنصة لتقديم حملات فيديو تتفوق على المنافسين. نحن لا نصنع مقاطع فيديو فحسب، بل نصنع تجارب تجذب جمهورك وتحقق أرباحاً كبيرة.
+          </p>
+        </div>
+      </div>
+     </div>
+    
+        
+      <!--salestext -->
+   
+     <!--casestudy -->
+     <div class="flex">
+      <div class="min-w-40 m-10"><Picture src={crepEscape} alt="Forever Viral Media Video Content"></div>
+      <div class="min-w-40 m-10"><Picture src={auction} alt="Forever Viral Media Video Content"></div>
+      
+          <div class="min-w-40 m-10"><Picture src={icecream} alt="Forever Viral Media Video Content"></div>
+      <div class="min-w-40 m-10"><Picture src={detail} alt="Forever Viral Media Video Content"></div>                  
+      </div>
+      <div class="flex">
+      <div class="min-w-40 m-10"><Picture src={werks} alt="Forever Viral Media Video Content"></div>
+          <div class="min-w-40 m-10"><Picture src={speedy} alt="Forever Viral Media Video Content"></div>
+              <div class="min-w-40 m-10"><Picture src={bins} alt="Forever Viral Media Video Content"></div>
+                  <div class="min-w-40 m-10"><Picture src={brady} alt="Forever Viral Media Video Content"></div>
+                 
+      </div>
+     
+    <div class="grid mb-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
+      <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          الافتتاح الكبير المعجزة لأعمال التصفية في أمازون | يوم واحد، ميزانية 1000 دولار، أكثر من 50 ألف دولار مبيعات 50 ألف دولار
+        </h3>
+        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+          الخدمات المقدمة:
+        </p>
+        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          الحملة الإعلانية
+        </p>
+        <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          إنشاء المحتوى
+        </p>
+        <Picture src={Resultsamazon} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          ميزانية تسويقية محدودة وفرصة صغيرة. لقد ارتقينا بأعمال التصفية هذه إلى إنجازات مذهلة باستخدام استراتيجية تسويقية ذكية آتت ثمارها الكبيرة لعميلنا.        </p>
+      </a>
+
+      <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          أعمال صغيرة، وصول كبير. | 250 مليون ظهور في 3 أشهر باستخدام Tiktok.
+        </h3>
+        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+          الخدمات المقدمة:
+        </p>
+        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          الحملة الإعلانية
+        </p>
+        <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          إنشاء المحتوى
+        </p>
+        <Picture src={Results250} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+      </a>
+
+      <a href="/casestudies" class="block bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          | تسويق نظيف جداً | مضاعفة أعمال خدمات التنظيف بأكملها ثلاث مرات.
+
+        </h3>
+        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
+          الخدمات المقدمة:
+
+        </p>
+        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
+          الحملة الإعلانية
+        </p>
+        <Picture src={Cleaningresults} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          ما بدأ كاستراتيجية إطلاق بسيطة على وسائل التواصل الاجتماعي لصاحب امتياز صغير تحوّل إلى ضجة كبيرة. مما أدى إلى تحطيم أرقام قياسية للامتياز الذي ترك مكتب التسويق الخاص بالشركة عاجزاً عن الكلام....        </p>
+      </a>
+    </div>
+
+      <!--casestudy -->
+
+    
+    <!-- CTA -->
+    <div
+    class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+    <h2 class="text-white text-4xl md:text-6xl tracking-tight">
+      رحلتك تبدأ من هنا.
+    </h2>
+    <p class="text-slate-400 mt-4 text-lg md:text-xl">
+      تحدث إلى أحد أعضاء الفريق
+    </p>
+    <div class="flex mt-5">
+      <Link href="#" style="inverted">  احجز استشارة مجانية الآن </Link>
+    </div>
+  </div>
+     <!-- CTA -->
+   
+  </Container>
+</Arlayout>
