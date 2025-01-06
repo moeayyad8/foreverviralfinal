@@ -10,9 +10,11 @@ import Button from "./ui/button.astro";
   id="form"
   class="needs-validation"
   novalidate>
-  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+  <input type="hidden" name="access_key" value="6d95ff88-c7a2-4d60-8145-6ea042e46f20" />
   <!-- Create your free access key from https://web3forms.com/ -->
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
+  
+  
   <div class="mb-5">
     <input
       type="text"
@@ -25,6 +27,8 @@ import Button from "./ui/button.astro";
       Please provide your full name.
     </div>
   </div>
+  
+  
   <div class="mb-5">
     <label for="email_address" class="sr-only">Email Address</label><input
       id="email_address"
@@ -41,15 +45,57 @@ import Button from "./ui/button.astro";
       Please provide a valid email address.
     </div>
   </div>
+  
+  <div class="mb-3">
+    <label for="phone" class="text-sm text-gray-600 dark:text-gray-400"
+      ></label
+    >
+    <input
+      type="text"
+      name="phone"
+      id="phone"
+      placeholder="Phone Number"
+      required
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    />
+  </div>
+  
+  
   <div class="mb-3">
     <textarea
-      name="message"
+      name="revenue"
       required
-      placeholder="Your Message"
+      placeholder="What is your approximate monthly revenue? (Used to decide if we are a good fit for you)"
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Please enter your message.
+      What is your approximate monthly revenue? (Used to decide if we are a good fit for you)
+    </div>
+  </div>
+  
+  
+  <div class="mb-3">
+    <textarea
+      name="role"
+      required
+      placeholder="What is your role in the company?"
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    ></textarea>
+    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+     Please explain your role.
+    </div>
+  </div>
+ 
+ 
+  <div class="mb-3">
+    <textarea
+      name="businesstype"
+      required
+      placeholder="Briefly explain your business."
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    ></textarea>
+    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+     Briefly explain your business.
     </div>
   </div>
   <Button type="submit" size="lg" block>Send Message</Button>
