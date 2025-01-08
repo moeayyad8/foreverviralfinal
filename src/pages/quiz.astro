@@ -10,8 +10,12 @@ const QuizQuestions = [
         question: "What is your biggest challenge?",
         answer1:[
             "Finding new customers",
-            ],
-
+             ],
+        question2: "How many employees?",
+        answer2:[
+            "0-5",
+            
+        ]
         }
     ];
 
@@ -75,8 +79,8 @@ const QuizQuestions = [
         
             <div class="flex-row">
                 <div class="flex flex-col items-center space-y-4 mt-2">
-                    <p class="w-full text-center outline outline-2 p-3  outline-black rounded-lg text-2xl font-semibold text-slate-800">
-{QuizQuestions[0].answer1}
+                    <p class="w-full text-center outline outline-2 p-3 outline-black rounded-lg text-2xl font-semibold text-slate-800 hover:shadow-lg hover:bg-slate-100 cursor-pointer">
+                    {QuizQuestions[0].answer1}
                     </p>
                     <p class="w-full text-center outline outline-2 outline-black rounded-lg text-2xl font-semibold text-slate-800 mx-auto">
                     <span class="inline-block w-1/3">11-50</span>
