@@ -1,0 +1,34 @@
+---
+import { ExternalLink } from "lucide-react";
+import Numbers from "./numbers.astro";
+import heroImage from "assets/heroopt2.png";
+import Picture from "astro/components/Picture.astro";
+import Contactform from "./contactform.astro";
+---
+
+    <section class="relative overflow-hidden py-16">
+      <div class="container">
+        <div class="magicpattern absolute inset-x-0 top-0 -z-10 flex h-full w-full items-center justify-center opacity-100" />
+        <div class="mx-auto flex max-w-5xl flex-col items-center">
+            <Picture src={heroImage} alt="Hero"></Picture>
+          <div class="z-10 flex flex-col items-center gap-6 text-center">
+            
+           High Growth Partners for Small to Medium Sized Businesses.
+            <div>
+              <h1 class="mb-6 text-pretty text-2xl font-bold lg:text-5xl">
+                Marketing, Business Automation, & Globalization Experts.
+              </h1>
+              <div class=" items-center rounded-xl p-10">
+                
+              </div>
+            </div>
+            <div class="mt-4 flex justify-center gap-2">
+            <Numbers/>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+

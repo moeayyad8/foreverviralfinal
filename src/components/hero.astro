@@ -3,13 +3,15 @@ import { Picture } from "astro:assets";
 import heroImage from "assets/heroimg.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
+import heroImagetwo from "@assets/heroopt2.png"
+import Numbers from "./numbers.astro";
 ---
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
-      src={heroImage}
+      src={heroImagetwo}
       alt="Forever Viral Media Video Content"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
@@ -18,16 +20,20 @@ import { Icon } from "astro-icon/components";
     />
   </div>
   
-  <div>
+  <div> 
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+  Top Rated Growth Agency
+  </p>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Your All-in-One Growth Partner 
+      class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
+     We grow businesses faster, smarter and more profitable.
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
       At Forever Viral Media, we’re your full-service growth partners,
       delivering results-driven marketing solutions. From creative strategy to 
       Ai Automation, we handle it all.
     </p>
+ <Numbers/>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="/contact"
