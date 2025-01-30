@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import businesspic from "@assets/businesspic.png";
+import pinmap from "@assets/pinmap.png";
+import {Picture} from "astro:assets";
+import logobatch from "@assets/logobatch.png"; 
+import systemshop from "@assets/systemshop.png";
+
+---
+<h3 class="text-2xl font-bold lg:tracking-tight">
+  We create local legends, and launch them into global brands.
+ </h3> 
+ <p class ="pt-4">
+  Here's a few of our favorite success stories, and partnerships
+ </p>
+<div class="flex justify-center items-center pb-14">
+  <Picture src={logobatch} alt="Client Logos" class=""/>  
+</div>
+<h3 class="text-4xl text-center font-bold lg:tracking-tight">
+  How it Works.
+ </h3> 
+ <p class="pt-4 text-center ">
+  Our process is simple, yet effective. We leverage the latest & best marketing distrubution, formats, and systems to get your business in front of the masses.
+  </p>
+  <div>
+    <div class="flex justify-center items-center">
+      <Picture src={businesspic} alt="Business Growth" class=""/>  
+    </div>
+    <p class="pt-4 text-3xl font-bold "> Growth Phase </p>
+   
+    <p class="pt-4">We grow the initial location into a marketing powerhouse. This allows us to reach a massive audience that collects new customers, and potential franchisors</p>
+    </div>
+    <div>
+      <div class="flex justify-center items-center">
+        <Picture src={systemshop} alt="Business Map with Pins" class=""/>  
+      </div>
+      <p class="pt-4 text-3xl font-bold "> Systems Phase </p>
+      <p class="pt-4">In order to capitalize from the inital buzz created around the central location, we systemize your internal processes to ensure that </p>
+    </div>
+    <div>
+      <div class="flex justify-center items-center">
+        <Picture src={pinmap} alt="Business Growth" class=""/>  
+      </div>
+      <p class="pt-4 text-3xl font-bold "> Expansion Phase </p>
+      <p class="pt-4">We grow the initial location into a marketing powerhouse. This allows us to reach a massive audience that collects new customers, and potential franchisors</p>
+    </div>
+ 
+
+   
