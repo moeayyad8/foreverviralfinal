@@ -5,16 +5,16 @@ import pinmap from "@assets/pinmap.png";
 import {Picture} from "astro:assets";
 import logobatch from "@assets/logobatch.png"; 
 import systemshop from "@assets/systemshop.png";
-
+import Link from "./ui/link.astro";
 ---
 
-<h3 class="text-2xl font-bold lg:tracking-tight">
+<h3 class="text-2xl pt-16 font-bold lg:tracking-tight">
   We create local legends, and launch them into global brands.
  </h3> 
  <p class ="pt-4">
   Here's a few of our favorite success stories, and partnerships
  </p>
-<div class="flex justify-center items-center pb-14">
+<div class="flex justify-center items-center pb-16">
   <Picture src={logobatch} alt="Client Logos" class=""/>  
 </div>
 
@@ -31,10 +31,15 @@ import systemshop from "@assets/systemshop.png";
     <div class="flex justify-center items-center">
       <Picture src={businesspic} alt="Business Growth" class=""/>  
     </div>
+   
     <p class="pt-4 text-3xl font-bold "> Growth Phase </p>
    
-    <p class="pt-4">We grow the initial location into a marketing powerhouse. This allows us to reach a massive audience that collects new customers, and potential franchisors</p>
-    </div>
+    <p class="pt-4">We grow your initial locations into a marketing machine. This allows us to reach a massive audience that collects new customers, and potential franchisors</p>
+
+    
+    
+    
+  </div>
 
 
     <div>
@@ -43,6 +48,7 @@ import systemshop from "@assets/systemshop.png";
       </div>
       <p class="pt-4 text-3xl font-bold "> Systems Phase </p>
       <p class="pt-4">In order to capitalize from the inital buzz created around the central location, we systemize your internal processes to ensure that expansion is as clean as possible. </p>
+      
     </div>
 
 
@@ -54,5 +60,15 @@ import systemshop from "@assets/systemshop.png";
       <p class="pt-4 pb-12 ">With a host of potential franchisors, customers, and partners we begin growth by systematically moving to regions with the most demand. Paired with unbeaten local marketing.</p>
     </div>
  
-
+<div class="pb-16">
+    <Link
+    href="/contact"
    
+    target="_blank"
+    class="flex gap-1 font-bold items-center justify-center "
+    rel="noopener">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+
+     Talk to a Representative
+  </Link>
+</div>
