@@ -1,18 +1,103 @@
+---
+import { Picture } from "astro:assets";
+import fvmLogo from "assets/forevervirallogo.svg";
+---
+
 <footer class="my-20">
+<div class="flex justify-center items-center">
+
+  <Picture
+    src={fvmLogo}
+    alt="Forever Viral Media Logo"
+    widths={[200, 400, 600]}
+    sizes="(max-width: 800px) 100vw, 620px"
+    loading="eager"
+    format="avif"
+  />
+</div>
+
   <p class="text-center text-sm text-slate-500">
     Copyright © {new Date().getFullYear()} Forever Viral Media.
   </p>
-  <!--
-    Can we ask you a favor 🙏
-    Please keep this backlink on your website if possible.
-    or Purchase a commercial license from https://web3templates.com - ok ily 
-  -->
-  <p class="text-center text-xs text-slate-500 mt-1">
+
+  
+  
+  <div class="flex justify-center items-center ">
+    
+    
+  <p class="text-center text-xs text-slate-500 mt-1 p-1">
+   
      <a
-      href="https://web3templates.com"
+      href="/privacypolicy"
       target="_blank"
       rel="noopener"
       class="hover:underline">
+      Privacy Policy 
     </a>
   </p>
+
+  <p class="text-center text-xs text-slate-500 mt-1 p-1 ">
+    <a
+     href="/termsofservice"
+     target="_blank"
+     rel="noopener"
+     class="hover:underline">
+     Terms of Service
+   </a>
+ </p>
+
+
+ <p class="text-center text-xs text-slate-500 mt-1 p-1">
+  <a
+   href="/fulldisclosure"
+   target="_blank"
+   rel="noopener"
+   class="hover:underline">
+  Full Disclousure 
+ </a>
+
+</p>
+
+
+<p class="text-center text-xs text-slate-500 mt-1 p-1 ">
+  <a
+   href="/dmca"
+   target="_blank"
+   rel="noopener"
+   class="hover:underline">
+  DMCA Policy  
+ </a>
+
+</p>
+
+
+<p class="text-center text-xs text-slate-500 mt-1 p-1">
+  <a
+   href="/refund"
+   target="_blank"
+   rel="noopener"
+   class="hover:underline">
+    Refund Guarentee Policy  
+ </a>
+
+</p>
+</div>
+  <div class="pl-20 pr-20 pt-8 pb-14">
+    <p class="text-center text-xs text-slate-500 mt-1 pt-4 ">
+      This website is operated by Forever Viral Media. Use of the website is governed by its Terms of Service and Privacy Policy. Forever Viral Media is a marketing and franchise development company. We do not sell a business opportunity, "get rich quick" program, or money-making system. We believe that with the proper education, individuals can be better prepared to make investment decisions, but we do not guarantee success in our training. We do not make earnings claims, effort claims, or claims that our development will make you any money.
+    </p>
+    <p class="text-center text-xs text-slate-500 mt-1 pt-4">
+      Forever Viral Media offers training that a large portion of the market overlooks. We believe that with the correct distribution methods and fundamentals, businesses can take advantage of short-form algorithms. Forever Viral Media provides the fulfillment of these new distribution methods, training for successfully scaling businesses, and sales teams for locating and selling to potential franchisors.
+    </p>
+    <p class="text-center text-xs text-slate-500 mt-1 pt-4">
+      All material is intellectual property and protected by copyright. Statements and depictions are the opinions, findings, or experiences of individuals who have purchased packages in the past with Forever Viral Media. These clients have worked with Forever Viral Media, along with Shout Hero Marketing (SHM), the previous branding for this offer.
+    </p> 
+     <p class="text-center text-xs text-slate-500 mt-1 pt-4">
+      Results may differ, as they depend on individual effort, time, skill, and various unpredictable factors. We do not track earnings or financial performance; instead, we monitor completed transactions and customer satisfaction through voluntary surveys. Data shows that most clients who complete the Growth Phase and apply the techniques see positive outcomes. However, it’s important to note that a high view count in the Growth Phase does not necessarily equate to financial success. Additionally, many customers either discontinue the program, fail to apply what they learn, or struggle to make sales successful despite their efforts.
+    </p>
+    <p class="text-center text-xs text-slate-500 mt-1 pt-4 ">
+      Forever Viral Media may refer to content that is not owned by Forever Viral Media. All references to third-party products, services, and websites are subject to change without notice. Forever Viral Media is not responsible for the content, claims, or representations of third-party products, services, or websites. Additionally, testimonials, case studies, and client stories are based on conversations, text threads, and surveys with real clients. They may be edited for clarity or brevity, but not to exaggerate results.
+    </p>
+  </div>
+ 
 </footer>
