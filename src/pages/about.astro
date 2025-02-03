@@ -5,6 +5,7 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Moe from "@assets/testimonial/moeayyad.png"
+import mobilehero from "@assets/mobileheroonly.png";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -15,92 +16,89 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 <Layout title="About">
   <Container>
    
-
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-    
-      
-      <h2 class="font-bold text-4xl text-gray-800 flex justify-center" >
-        Our Core Values.
-      </h2>
-      <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Innovation-Driven Growth
-      </h2>
-      <p class="text-sm text-gray-800 flex justify-center" >
-        We embrace cutting-edge strategies and technologies to help brands stay ahead in the fast-evolving digital landscape.
-      </p>
-       <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Customer-Centric Excellence
-      </h2>
-      <p class="text-sm text-gray-800 flex justify-center" >
-        Our clients' success is our priority. We are committed to delivering tailored solutions that exceed expectations.
-      </p>
-      <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Integrity and Transparency
-      </h2>
-      <p class="text-sm text-gray-800 flex justify-center" >
-        We operate with honesty, building trust through open communication and ethical practices.
-      </p>
-      <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Collaboration and Teamwork
-      </h2>
-      <p class="text-sm text-gray-800 flex justify-center" >
-        We value the power of diverse perspectives, working together with clients and within our team to achieve outstanding results.
-      </p>
-      <h2 class="pt-10 font-bold text-3xl text-gray-800 flex justify-center" >
-        Adaptability and Resilience
-      </h2>
-      <p class="text-sm text-gray-800 flex justify-center" >
-        In a rapidly changing world, we remain flexible and proactive, ensuring we’re always ready for new challenges and opportunities.
-      </p>
-      <h3 class="pt-12 text-lg font-semibold text-slate-500">
-        Founders Letter
-      </h3>
-    
-      <p class="text-lg leading-relaxed text-slate-500">
-        Forever Viral was founded on the principle that everyone has a story to tell. We believe that the power of storytelling can change the world. All business is personal, and we strive to create meaningful connections with our clients and partners. I aim to build a company that is not only successful but also a force for good in the world. We are committed to creating a positive impact on the lives of our employees, clients, and the world at large.  My hope is that our clients will look back on their time with us as a turning point in their business, a time when they discovered their true potential and achieved their dreams. I am excited to see what the future holds for Forever Viral and the incredible people we work with.
-      </p>
-      <h2 class=" pt-24 font-bold text-3xl text-gray-800">
+    <h2 class="pt-12 font-bold text-3xl text-gray-800 text-center">
+      About Us 
+    </h2>
+    <Picture 
+      src={mobilehero}
+      alt="About Us Picture"
+      class="w-400 h-400 mx-auto"
+/>  
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl ">
+      <h2 class="pt-8 font-bold text-3xl text-gray-800 text-center">
         Empowering the world to be Forever Viral.
       </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
+      <p class="text-lg leading-relaxed text-slate-500 text-center">
         At Forever Viral, we are at the forefront of the digital marketing revolution, creating and managing content that captures attention and drives engagement. With over four years of industry expertise, we have generated more than 2 billion organic views, solidifying our reputation as leaders in crafting viral success stories.
 
         Our unique approach bridges the gap between creators and companies. We craft strategies that deliver exceptional results for everyone involved.
         
         We pride ourselves on our versatility, having worked with a wide array of niches—from lifestyle and fashion to tech, fitness, and beyond. 
       </p>
+      
+      <h2 class="pt-8 font-bold text-2xl text-gray-800 flex justify-center text-center" >
+        Our Core Values.
+      </h2>
+      <h2 class="pt-4 font-bold text-xl text-gray-800 flex justify-center text-center" >
+        Innovation-Driven Growth
+      </h2>
+      <p class="text-sm text-gray-800 flex justify-center text-center" >
+        We embrace cutting-edge strategies and technologies to help brands stay ahead in the fast-evolving digital landscape.
+      </p>
+       <h2 class="pt-4 font-bold text-xl text-gray-800 flex text-center justify-center" >
+        Customer-Centric Excellence
+      </h2>
+      <p class="text-sm text-gray-800 flex justify-center text-center" >
+        Our clients' success is our priority. We are committed to delivering tailored solutions that exceed expectations.
+      </p>
+      <h2 class="pt-4 font-bold text-xl text-gray-800 flex justify-center text-center" >
+        Integrity and Transparency
+      </h2>
+      <p class="text-sm text-gray-800 flex justify-center text-center" >
+        We operate with honesty, building trust through open communication and ethical practices.
+      </p>
+      <h2 class="pt-4 font-bold text-xl text-gray-800 flex justify-center text-center" >
+        Collaboration and Teamwork
+      </h2>
+      <p class="text-sm text-gray-800 flex justify-center text-center" >
+        We value the power of diverse perspectives, working together with clients and within our team to achieve outstanding results.
+      </p>
+      <h2 class="pt-4 font-bold text-xl text-gray-800 flex justify-center text-center" >
+        Adaptability and Resilience
+      </h2>
+      <p class="text-sm text-gray-800 flex justify-center text-center" >
+        In a rapidly changing world, we remain flexible and proactive, ensuring we’re always ready for new challenges and opportunities.
+      </p>
+      <h3 class="pt-12 text-lg font-semibold text-center">
+        Founders Letter
+      </h3>
+    
+      <p class="text-lg leading-relaxed text-slate-500 text-center">
+        Forever Viral was founded on the principle that everyone has a story to tell. We believe that the power of storytelling can change the world. All business is personal, and we strive to create meaningful connections with our clients and partners. I aim to build a company that is not only successful but also a force for good in the world. We are committed to creating a positive impact on the lives of our employees, clients, and the world at large.  My hope is that our clients will look back on their time with us as a turning point in their business, a time when they discovered their true potential and achieved their dreams. I am excited to see what the future holds for Forever Viral and the incredible people we work with.
+      </p>
+      <Picture 
+      src={Moe}
+      alt="About Us Picture"
+      class="w-24 h-24 rounded-full mx-auto"
+    />
+      <p class="text-lg leading-relaxed text-center">
+Mohammed Ayyad | Founder </p>
+
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       <div>
         
       </div>
-      <!-- 
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Picture
-                src={Moe}
-                alt="Mohammed Ayyad"
-                sizes="(max-width: 800px) 100vw, 400px"
-                width={400}
-                height={400}
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
-              />
-            </div>
-
-            <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">Mohammed Ayyad</h2>
-              <h2 class="text-lg text-gray-800">BA Marketing</h2>
+    
+          
            
-              <h3 class="text-sm text-slate-500">
-                Founder & CEO
-              </h3>
             </div>
           </div>
           <div>
             
           </div>
     </div>
-    -->
+    
     
   
   </Container>
