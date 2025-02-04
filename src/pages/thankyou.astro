@@ -1,0 +1,30 @@
+---
+import Contactform from "@components/contactform.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import Link from "@components/ui/link.astro";
+import mobilehero from "@assets/mobileheroonly.png";
+import { Picture } from "astro:assets";
+---
+<Layout title="Thank You ">
+  <Container>
+    <div class="">
+        <Sectionhead>
+            <Fragment slot="title">Thank You!</Fragment>
+            <Fragment slot="desc">We are excited to speak with you! 
+              <Picture 
+      src={mobilehero}
+      alt="FVM"
+      class="w-400 h-400 mx-auto"
+/>  
+         <p class="text-lg leading-relaxed text-slate-500 text-center p-6"> A member will reach out to you to confirm your discovery call details.</p>
+              <Link href="/">Return to Home</Link>
+
+            </Fragment>
+     
+           
+    </div>
+  </Container>
+</Layout>
