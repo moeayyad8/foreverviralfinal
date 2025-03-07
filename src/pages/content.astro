@@ -18,15 +18,18 @@ import ContentPayment from "@components/contentcreation/contentpay.astro";
     <div class="block md:hidden">
       <video 
       src={contentcoachingvideo}
-      alt="Coaching Video Example"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-      autoplay
-      Loop 
-      Muted
-      />
+      style={{ 
+        width: "100%", 
+        maxWidth: "500px", 
+        height: "auto", 
+        objectFit: "cover" 
+      }}
+      autoPlay 
+      loop 
+      muted 
+      playsInline
+     
+    />
     </div>
    
     <Service />
