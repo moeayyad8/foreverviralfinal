@@ -4,42 +4,43 @@ import { Icon } from "astro-icon/components";
 
 const features = [
   {
-    title: "Niche Analysis",
-    description: "Short-form content drives scalable success. Our strategy starts by positioning your business within a thriving social media niche, ensuring your content connects with an engaged audience. This targeted approach maximizes reach and delivers measurable results.",
-    icon: "bx:dice-1",
+    title: "Learn how to create content that gets views & sales",
+    description: "",
+    icon: "bx:check",
   },
   {
-    title: "Creative Strategy",
+    title: "Steal our proven viral formulas that work for any industry",
     description:
-      "We energize your brand with a dynamic creative strategy. Our team generates fresh, compelling ideas that resonate with your audience. Through engaging scripts and precise editing, we ensure your message hits hard for maximum impact.",
-    icon: "bx:dice-2",
+      "",
+    icon: "bx:check",
   },
   {
-    title: "Optimization & Scaling",
+    title: "Get expert feedback on your content so you don’t waste time",
     description:
-      "Execution is just the beginning. We dive deep into data, identifying areas for growth and refining strategies to amplify your reach. From perfecting your content calendar to optimizing profiles, we position your brand for long-term, sustainable success",
-    icon: "bx:dice-3",
+      "",
+    icon: "bx:check",
   },
   
 ];
 ---
 
-<div class="pt-24 mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Ignite Your Brand with Massive Audiences
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-4xl text-slate-600 font-bold lg:tracking-tight">
+    Get Coached by the Top 1% Performers in Content for Businesses.
   </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    We build content strategies that connect your brand with vast, engaged audiences. Our system drives millions of views, ensuring your message reaches the right people at the right time.  </p>
+  <p class="text-xl font-bold mt-4 text-yellow-500">
+    1,000+ Videos with more than a million views.
+  </p>
 </div>
 <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-yellow-500 rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-2xl">{item.title}</h3>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>

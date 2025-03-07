@@ -1,0 +1,130 @@
+---
+import {Picture} from "astro:assets";
+import message1 from "assets/testimonial/message1.png";
+import message2 from "assets/testimonial/message2.png";
+import message3 from "assets/testimonial/message3.png";
+import message4 from "assets/testimonial/message4.png";
+import message5 from "assets/testimonial/message5.png";
+import message6 from "assets/testimonial/message6.png";
+import Link from "@components/ui/link.astro";
+import PricingCard from "@components/pricing.astro";
+
+const pricing = [
+ 
+  {
+  
+    price: {
+      monthly: "$97",
+      annual: "$16",
+      discount: "10%",
+      original: "$24",
+    },
+    popular: true,
+    features: [
+      
+      "Initial Content Review",
+      "Personalized Content Plan",
+      "Proven Viral Strategies",
+      "Deep Insights on Best Practices",
+      "Direct Support from Experts",
+      "Discount Access to our Editing Team",
+    ],
+    button: {
+      text: "Join 100+ Business Owners.",
+      link: "#",
+    },
+  },
+
+];
+
+---
+<Picture class="pt-8" src={message1} alt="messages" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+<Picture class="pt-8" src={message2} alt="messages" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+<Picture class="pt-8" src={message6} alt="messages" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+<Picture class="pt-8" src={message3} alt="messages" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+<Picture class="pt-8" src={message4} alt="messages" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+<Picture class="pt-8" src={message5} alt="messages" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-2xl lg:text-5xl font-bold lg:tracking-tight">
+    <span>Agencies and Creators </span> charge you thousands for these results.
+  </h2>
+ 
+    
+ 
+
+      <p class="text-2xl pb-4 mt-4 font-bold text-slate-600 max-w-xl">
+       With us, Get your first session for only  </p>
+  
+    
+   
+</div>
+<div>
+  {pricing.map((item) => <PricingCard plan={item} />)}
+
+  </div>
+  <div class="mt-8">
+    <h2 class="text-2xl lg:text-5xl font-bold lg:tracking-tight">
+      FAQ
+    
+    
+      <p class="text-xl pb-4 mt-4 font-bold  max-w-xl">
+     Why is it only $97? </p>
+      <p class="text-xl pb-4 mt-4 font-bold text-slate-600 max-w-xl">
+      Without all the labor involved, we can share you the intimate details creators and agencies use to get results like these over and over. Our hope is that once you grow big enough, you will choose us to help you open more locations and scale. </p>
+
+
+      <p class="text-xl pb-4 mt-4 font-bold  max-w-xl">
+        Who is this for? </p>
+         <p class="text-xl pb-4 mt-4 font-bold text-slate-600 max-w-xl">
+          This is for business owners, entrepreneurs, and marketers who want to grow their brand using viral content strategies, even if they have no prior experience.
+
+
+
+
+         <p class="text-xl pb-4 mt-4 font-bold  max-w-xl">
+          What if I don’t have any experience creating content?
+</p>
+           <p class="text-xl pb-4 mt-4 font-bold text-slate-600 max-w-xl">
+            No worries! We guide you step-by-step, even if you’ve never posted before. Our methods are beginner-friendly and easy to follow.
+
+
+
+
+           <p class="text-xl pb-4 mt-4 font-bold  max-w-xl">
+            How soon can I expect to see results?
+          </p>
+             <p class="text-xl pb-4 mt-4 font-bold text-slate-600 max-w-xl">
+              Many clients see engagement and traffic growth within weeks, but results depend on consistency and execution. We give you the exact blueprint to maximize success.
+
+
+
+
+             <p class="text-xl pb-4 mt-4 font-bold  max-w-xl">
+              What’s included in the $97 session?
+            </p>
+               <p class="text-xl pb-4 mt-4 font-bold text-slate-600 max-w-xl">
+                You get a personalized content plan, proven viral strategies, direct expert support, and access to our editing team at a discount.
+
+
+
+
+               <p class="text-xl pb-4 mt-4 font-bold max-w-xl">
+                Do I need to show my face on camera?
+</p>
+                 <p class="text-xl pb-4 mt-4 font-bold text-slate-600 max-w-xl">
+                  Not at all! We provide multiple content strategies, including faceless branding, so you can grow your business in a way that fits your comfort level.
+
+                </div>
+
+ 
+
+
+
+<!--Card -->
+
+
+
+
+ 

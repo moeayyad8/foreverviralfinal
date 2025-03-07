@@ -1,48 +1,119 @@
 ---
-import { Image } from "astro:assets";
-import Link from "./ui/link.astro";
-import Results250 from "assets/testimonial/results250m.png";
-import Casestudy2 from "assets/casestudies/casestudy2.png";
-import Resultsamazon from "assets/testimonial/resultsamazon.png";
-import {Picture} from "astro:assets";
-import Cleaningresults from "assets/testimonial/resultscleaning.png";
+import Casestudy from "@components/casestudy.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Pricing from "@components/pricing.astro";
+import Layout from "@layouts/Layout.astro";
+import Numbers from "@components/numbers.astro";
+import Toquiz from "@components/toquiz.astro";
+import Footer from "@components/footer.astro";
+import Maybehero from "@components/maybehero.astro";
+import How from "@components/how.astro";
+import Weown from "@components/weown.astro";
+import Mobilehero from "@components/mobilehero.astro";
+import Testimonials from "@components/testimonials.astro";
+import Whyminor from "@components/whyminor.astro";
+import Picture from "astro/components/Picture.astro";
+import herofvmhome from "@assets/fvmherohome.png";
+import Link from "@components/ui/link.astro";
+import Resultsamazon from "@assets/testimonial/resultsamazon.png";
+import Results250 from "@assets/testimonial/results250m.png";
+import Cleaningresults from "@assets/testimonial/resultscleaning.png";
 ---
-<h3 class="text-5xl pb-12 pt-16 font-bold lg:tracking-tight">
-  Businesses using our content system see <span class="text-yellow-500"> massive </span> growth.
- </h3> 
+
+<Layout title="Franchise Marketing Agency">
+  
+  <Container>
+    <Mobilehero/>
+    <main
+  class="grid lg:grid-cols-2 place-items-center pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Picture
+      src={herofvmhome}
+      alt="Forever Viral Media Video Content"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  
+  <div> 
+    <h1 class="text-lg text-slate-600 max-w-xl">
+  Franchise Marketing Agency.
+    </h1>
+    <h1
+      class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
+     Grow your business <span class="text-yellow-500 "> with real experts. </span>
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+     We are a franchise growth agency that specializes in helping businesses grow their audience, brand, and revenue using content. 
+    </p>
+
+    <p class="text-lg mt-4 font-bold text-slate-600 max-w-xl">
+Our content team is responsible for:     </p>
+    
+ <Numbers/>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="/contact"
+       
+        target="_blank"
+        class="flex gap-1 font-bold items-center justify-center"
+        rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+
+         Apply Now
+      </Link>
+
+   
+    
+    </div>
+    
+  </div>
+  
+</main>
+
+<h3 class="text-2xl text-center text-slate-600  font-bold lg:tracking-tight">
+  Break free from shady agencies, overpriced influencers, and unsustainable ads & </h3> 
  
-  <!-- Case Study Section 
-<div class="flex">
-<div class="min-w-40 m-10"><Picture src={crepEscape} alt="Forever Viral Media Video Content"></div>
-<div class="min-w-40 m-10"><Picture src={auction} alt="Forever Viral Media Video Content"></div>
+  <h3 class="text-5xl text-center pb-10 pt-8 font-bold lg:tracking-tight">
+    Turn your business into a social media giant. </h3> 
 
-    <div class="min-w-40 m-10"><Picture src={icecream} alt="Forever Viral Media Video Content"></div>
-<div class="min-w-40 m-10"><Picture src={detail} alt="Forever Viral Media Video Content"></div>                  
+    <div class="grid grid-cols-2 "> 
+      <h3 class="text-yellow-500 text-2xl font-bold p-6">
+      2+ Locations 
+    </h3>
+    <h3 class="text-yellow-500 text-2xl font-bold p-6">
+      1 Location
+    </h3>
 </div>
-<div class="flex">
-<div class="min-w-40 m-10"><Picture src={werks} alt="Forever Viral Media Video Content"></div>
-    <div class="min-w-40 m-10"><Picture src={speedy} alt="Forever Viral Media Video Content"></div>
-        <div class="min-w-40 m-10"><Picture src={bins} alt="Forever Viral Media Video Content"></div>
-            <div class="min-w-40 m-10"><Picture src={brady} alt="Forever Viral Media Video Content"></div>
-           
-</div>
--->
+<div class="grid grid-cols-2 "> 
+      <div class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+       
+        <h3 class="text-4xl font-bold p-6">
+          Franchising
+        </h3>
+       
+      </div>
+      <div class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-4xl font-bold p-6">
+          Personal Training
+        </h3>
+        </div>
+    </div>
 
 
-    <div class="grid mb-6 pt-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
-      <div href="/casestudies" class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+
+  <div class="grid mb-6 pt-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
+      <div href="/casestudies" class="bg-white  pt-4 pl-2 pr-2  rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
         <h3 class="text-xl font-bold p-6">
           The Miracle Grand Opening of an Amazon Liquidation Business | 1 Day, $1,000 Budget, 50k+ Sales.
         </h3>
-        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
-          Services Provided:
-        </p>
-        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
-          Campaign
-        </p>
-        <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
-          Content Creation
-        </p>
+      
         <Picture src={Resultsamazon} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
         <p class="text-sm p-6">
           A tight marketing budget and a small window of opportunity. We took this liquidation business to incredible feats using a clever marketing strategy that paid off big for our client., and then did it again..
@@ -53,31 +124,18 @@ import Cleaningresults from "assets/testimonial/resultscleaning.png";
         <h3 class="text-xl font-bold p-6">
           Small Business, Big Reach. | 250 Million impressions in 3 months using Tiktok.
         </h3>
-        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
-          Services Provided:
-        </p>
-        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
-          Campaign
-        </p>
-        <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
-          Content Creation
-        </p>
+    
         <Picture src={Results250} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
         <p class="text-sm p-6">
           What started as a simple social media launch strategy for a small franchisee turned into a viral sensation. Leading to franchise record breaking numbers that left their corporate marketing office speechless..
         </p>
       </div>
 
-      <div class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <div class="bg-white mb-6 pt-4 pl-2 pr-2 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
         <h3 class="text-xl font-bold p-6">
           Squeaky Clean Marketing. | Tripling a Cleaning Service's Entire Business.
         </h3>
-        <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
-          Services Provided:
-        </p>
-        <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
-          Campaign
-        </p>
+        
         <Picture src={Cleaningresults} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
         <p class="text-sm p-6">
           With a simple content and ad strategy, we helped this cleaning service triple their business in just a few months. Our targeted approach and engaging content led to a significant increase in customer acquisition and retention.
@@ -90,15 +148,7 @@ import Cleaningresults from "assets/testimonial/resultscleaning.png";
       <h3 class="text-xl font-bold p-6">
         A Super Sweet Success Story. | Zero to Over 7 figures in Sales for Small Business Owner 
       </h3>
-      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
-        Services Provided:
-      </p>
-      <p class="p-3 ml-3 font-bold bg-blue-200 rounded-3xl text-center inline-block align-center padding-left-2">
-        Campaign
-      </p>
-      <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
-        Content Creation
-      </p>
+  
       <p class="text-sm p-6">
         Every entrepreneur starts with a dream, but it takes the right strategy, execution, and support to turn that dream into a reality. This small business owner came to us with a unique product and a vision for success, but like many entrepreneurs, they were struggling to reach the right audience and scale their business.
 
@@ -116,13 +166,7 @@ import Cleaningresults from "assets/testimonial/resultscleaning.png";
       <h3 class="text-xl font-bold p-6">
         Unknown to Unstoppable. | 12x Audience Growth for a Small Business in 6 Months.
       </h3>
-      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
-        Services Provided:
-      </p>
-      
-      <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
-        Content Creation
-      </p>
+  
       <p class="text-sm p-6">
         A small business with big dreams. We helped this client grow their audience by 12x in just 4 months through a combination of engaging content, and strategic partnerships. Our team worked closely with the client to understand their brand, audience, and goals, and developed a comprehensive content strategy that resonated with their target market. By creating compelling, shareable content and leveraging data-driven insights, we were able to drive significant growth in their online presence and customer engagement. The results speak for themselves, with a 12x increase in audience size and a significant boost in brand awareness and customer loyalty.
       </p>
@@ -135,15 +179,7 @@ import Cleaningresults from "assets/testimonial/resultscleaning.png";
       <h3 class="text-xl font-bold p-6">
         Lines out the Door. | 5x Increase in Foot Traffic for a Local Restaurant.
       </h3>
-      <p class="p-1 ml-3 font-bold rounded-3xl padding-left-2">
-        Services Provided:
-      </p>
-      <p class="p-3 ml-3 font-bold bg-purple-200 rounded-3xl text-center inline-block align-center padding-left-2">
-        Influencer Marketing
-      </p>
-      <p class="p-3 ml-3 font-bold bg-green-200 rounded-3xl text-center inline-block align-center padding-left-2">
-        Content Creation
-      </p>
+   
       <p class="text-sm p-6">
         A local restaurant with big ambitions. We helped this client increase foot traffic by 5x in just 3 months through a combination of influencer marketing and engaging content. By partnering with local influencers and creating compelling, shareable content, we were able to drive significant growth in their customer base and brand awareness. Our team worked closely with the client to understand their goals and target market, and developed a customized marketing strategy that delivered real results. The restaurant saw lines out the door, increased revenue, and a loyal customer following that continues to grow.
       </p>
@@ -155,14 +191,15 @@ import Cleaningresults from "assets/testimonial/resultscleaning.png";
 
 
 
-    <Link
-    href="/casestudies"
-   
-    target="_blank"
-    class="flex gap-1 font-bold items-center justify-center"
-    rel="noopener">
+
+
+    <How/>
+    <Testimonials />
     
-
-     Get Case Studies 
-  </Link>
-
+   <!--   <Whyminor/> <Toquiz/> -->
+    <Weown/>
+    <Features />
+    <Logos />
+    <Cta />
+  </Container>
+</Layout>

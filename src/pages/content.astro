@@ -7,16 +7,34 @@ import Layout from "@layouts/Layout.astro";
 import Salestext from "@components/contentcreation/contentsalestext.astro"
 import Logos from "@components/contentcreation/contentlogos.astro";
 import Casestudy from "@components/casestudy.astro";
+import { Video } from "lucide-react";
+import contentcoachingvideo from "@assets/videos/contentcoachingvideo.mp4";
+import ContentPayment from "@components/contentcreation/contentpay.astro";
+
 ---
 
 <Layout title="Content">
   <Container>
+    <div class="block md:hidden">
+      <video 
+      src={contentcoachingvideo}
+      alt="Forever Viral Media Video Content"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+      autoplay
+      Loop 
+      Muted
+      />
+    </div>
+   
     <Service />
-    <Logos />
     
     <Automationfeatures />
-    <Salestext/>
     <Casestudy/>
-    <Cta />
+    <Salestext/>
+    <ContentPayment/>
+    <Logos />
   </Container>
 </Layout>
