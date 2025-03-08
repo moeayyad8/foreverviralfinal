@@ -22,12 +22,14 @@ import Link from "@components/ui/link.astro";
 import Resultsamazon from "@assets/testimonial/resultsamazon.png";
 import Results250 from "@assets/testimonial/results250m.png";
 import Cleaningresults from "@assets/testimonial/resultscleaning.png";
+import Rotatingheadline from "@components/rotatingheadline.tsx";
 ---
 
 <Layout title="Franchise Marketing Agency">
   
   <Container>
     <Mobilehero/>
+    <Rotatingheadline client:load />
     <main
   class="grid lg:grid-cols-2 place-items-center pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
@@ -47,7 +49,7 @@ import Cleaningresults from "@assets/testimonial/resultscleaning.png";
     </h1>
     <h1
       class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
-     Grow your business <span class="text-yellow-500 "> with real experts. </span>
+     We Help <span class="text-yellow-500 "> experts. </span> Grow with Content 
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
      We are a franchise growth agency that specializes in helping businesses grow their audience, brand, and revenue using content. 
