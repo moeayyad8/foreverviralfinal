@@ -1,10 +1,16 @@
 import { useState, useEffect } from "react";
 
 const headlines = [
-  "Boost Your Productivity 🚀",
-  "Unlock Your Potential 🔑",
-  "Achieve More with Less Effort 💡",
-  "Success Starts Here 🌟"
+  "Restaurants",
+  "Real Estate Agents",
+  "Travel Agents",
+  "Storefronts",
+  "Service Providers",
+  "Fitness Trainers",
+  "Creators",
+  "Marketers",
+  "Models",
+ 
 ];
 
 const RotatingHeadline = () => {
@@ -29,14 +35,14 @@ const RotatingHeadline = () => {
         {`
           .headline-container {
             position: relative;
-            height: 50px;
+            height: 55px;
             overflow: hidden;
           }
 
           .headline {
             position: absolute;
             width: 100%;
-            text-align: center;
+            text-align: left;
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;

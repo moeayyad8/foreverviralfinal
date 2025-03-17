@@ -16,20 +16,284 @@ import Weown from "@components/weown.astro";
 import Mobilehero from "@components/mobilehero.astro";
 import Testimonials from "@components/testimonials.astro";
 import Whyminor from "@components/whyminor.astro";
+import Picture from "astro/components/Picture.astro";
+import herofvmhome from "@assets/fvmherohome.png";
+import Link from "@components/ui/link.astro";
+import Resultsamazon from "@assets/testimonial/resultsamazon.png";
+import Results250 from "@assets/testimonial/results250m.png";
+import Cleaningresults from "@assets/testimonial/resultscleaning.png";
+import RotatingHeadline from "../components/RotatingHeadline.tsx";
+import viralvid from "@assets/videos/viralvid.mp4";
+import Playbook from "@assets/playbook.png";
+import Salesbook from "@assets/salesbook.png";
+import logobatch from "@assets/logobatch.png";
+import Dropdown from "../components/FaqDropdown.tsx";
 ---
 
 <Layout title="Franchise Marketing Agency">
   
   <Container>
-    <Mobilehero/>
-    <Hero />
-    <Casestudy />
-    <How/>
-    <Testimonials />
+
+   
+    <main
+  class="grid lg:grid-cols-2 place-items-center pb-4 md:pt-12 md:pb-24">
+  <div class="">
+    <video 
+    src={viralvid}
+    style={{ 
+      width: "100%", 
+      maxWidth: "500px", 
+      height: "auto", 
+      objectFit: "cover" 
+    }}
+    autoPlay 
+    loop 
+    muted 
+    playsInline
+   
+  />
+  </div>
+  
+  <div> 
+    <div class="">
+      <h1 class="text-lg text-slate-600 max-w-xl">
+        Franchise Marketing Agency.</h1>
+       <div class="text-yellow-500 text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
+         <RotatingHeadline client:only="react" />
+      </div>
+    </div>
+    
+    <h1
+      class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
+    Go Viral with Us.
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+     We are a franchise growth agency that specializes in helping businesses grow their audience, brand, and revenue using content. 
+    </p>
+
+
+  
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="/contact"
+       
+        target="_blank"
+        class="flex gap-1 font-bold items-center justify-center"
+        rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+
+         Apply Now
+      </Link>
+
+   
+    
+    </div>
+    
+
+  
+</main>
+
+
+      <!-- Lead Magnets -->  
+       <div class="justify-center text-center p-6">
+       
+      
+        <h4 class="text-4xl font-bold pt-8 "><span class="text-yellow-500 text-4xl font-bold">Free</span> Advanced Training </h4>
+        <p> Get access to documents that we use when onboarding businesses just like yours.</p>
+    
+      </div> 
+
+    <hr class="p-3"></hr>
+       
+      <div class="grid grid-cols-2 -mt-12">
+     
+        <div class="flex flex-col items-center justify-center  p-6">
+          
+          <Picture src={Playbook} alt="Viral Content Playbook" class="p-3 object-cover rounded-lg w-full h-auto max-w-xs" />
+          <p class="bg-red-500 text-white p-2 font-bold rounded-full"> Personalized for You!</p>
+          <a class="text-2xl text-center pt-3 font-bold text-yellow-500">
+            Viral Content Playbook
+          </a>
+          <p class="text-center">5 Proven Strategies to 10x Your Reach in 7 Days.</p>
+        </div>
+      
+        <div class="flex flex-col items-center justify-center p-6">
+          <Picture src={Salesbook} alt="7 Day Sales Surge System" class="p-3 object-cover rounded-lg w-full h-auto max-w-xs" />
+          <p class="bg-red-500 text-white p-2 font-bold rounded-full"> Personalized for You!</p>
+
+          <a class="text-2xl text-center pt-3 font-bold text-yellow-500">
+            The 7 Day Sales Surge System
+          </a>
+          <p class="text-center">Turn Views into Customers, Fast.</p>
+        </div>
+      </div>
+      
+
+
+
+
+
+      
+      <!--
+<h3 class="text-2xl text-center text-slate-600  font-bold lg:tracking-tight">
+  Break free from shady agencies, overpriced influencers, and unsustainable ads & </h3> 
+  -->
+
+        <!-- Content Numbers -->  
+
+  <h3 class="text-5xl text-center pb-10 pt-8 font-bold lg:tracking-tight">
+    Learn Content Secrets from the Best in the Business.</h3> 
+
+
+
+<div class=" "> 
+  <div class="bg-yellow-500 text-white text-xl font-semibold p-3 rounded-full">
+         
+    <Numbers/>
+  </div>
+      <p class="text-2xl text-center pt-6  text-slate-600  font-bold lg:tracking-tight">
+Need More Customers?
+<p class="text-2xl text-center text-slate-600  font-bold lg:tracking-tight">
+  Can't Stand Out from Competitors? </p>
+  <p class="text-2xl text-center text-slate-600  font-bold lg:tracking-tight">
+    Want to Build Trust Fast? </p>
+    <p class="text-2xl text-center text-slate-600  font-bold lg:tracking-tight">
+      Launching a New Product or Location? </p>       <p class="text-2xl text-center text-yellow-500 font-bold lg:tracking-tight">
+        Solve all of your problems with viral content.</p>      
+      
+    
+        <div class="mt-6 pb-8 flex flex-col justify-center sm:flex-row gap-3">
+          <Link
+            href="/contact"
+           
+            target="_blank"
+            class="flex p-16 gap-1 font-bold items-center justify-center"
+            rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 22v-3h-3v-2h3v-3h2v3h3v2h-3v3zM3 20V4h3V2h2v2h6V2h2v2h3v8.1q-.5-.075-1-.075t-1 .075V10H5v8h7q0 .5.075 1t.275 1z"></path></svg>
+    
+             Apply Now
+          </Link>
+      
+       
+        
+        </div>
+            <!-- faq -->
+             <hr class="p-3 pt-8"></hr>
+                 <div class="justify-center items-center text-center p-6">
+        <h4 class="text-4xl font-bold pb-8  "> Frequently Asked Questions </h4>
+       
+           <Dropdown client:load/>
+              
+            
+                 </div>
+            <!-- Logos -->  
+
+      
+      <div class=" flex flex-col justify-center items-center text-center p-6">
+        <h4 class="text-4xl font-bold pt-8 "> Just a few of our success stories. </h4>
+        <Picture src={logobatch} alt="Client Logos" class="justify-center items-center text-center"/>  
+      </div>
+  
+
+
+
+
+
+
+
+
+
+      <!-- 
+
+  <div class="grid mb-6 pt-6 sm:grid-cols-2 md:grid-cols-3 align-items-center">
+      <div href="/casestudies" class="bg-white  pt-4 pl-2 pr-2  rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          The Miracle Grand Opening of an Amazon Liquidation Business | 1 Day, $1,000 Budget, 50k+ Sales.
+        </h3>
+      
+        <Picture src={Resultsamazon} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          A tight marketing budget and a small window of opportunity. We took this liquidation business to incredible feats using a clever marketing strategy that paid off big for our client., and then did it again..
+        </p>
+      </div>
+
+      <div class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          Small Business, Big Reach. | 250 Million impressions in 3 months using Tiktok.
+        </h3>
+    
+        <Picture src={Results250} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          What started as a simple social media launch strategy for a small franchisee turned into a viral sensation. Leading to franchise record breaking numbers that left their corporate marketing office speechless..
+        </p>
+      </div>
+
+      <div class="bg-white mb-6 pt-4 pl-2 pr-2 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+        <h3 class="text-xl font-bold p-6">
+          Squeaky Clean Marketing. | Tripling a Cleaning Service's Entire Business.
+        </h3>
+        
+        <Picture src={Cleaningresults} alt="Case Study" class="p-3 w-full h-100 object-cover rounded-lg" />
+        <p class="text-sm p-6">
+          With a simple content and ad strategy, we helped this cleaning service triple their business in just a few months. Our targeted approach and engaging content led to a significant increase in customer acquisition and retention.
+        </p>
+      </div>
+    </div>
+
+
+    <div  class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        A Super Sweet Success Story. | Zero to Over 7 figures in Sales for Small Business Owner 
+      </h3>
+  
+      <p class="text-sm p-6">
+        Every entrepreneur starts with a dream, but it takes the right strategy, execution, and support to turn that dream into a reality. This small business owner came to us with a unique product and a vision for success, but like many entrepreneurs, they were struggling to reach the right audience and scale their business.
+
+        We worked closely with the client to understand their goals and challenges. Through in-depth research and strategy sessions, we crafted a customized marketing plan that combined targeted digital campaigns with compelling, engaging content. From developing a brand voice that resonated with their target market to implementing data-driven advertising strategies, our team designed a holistic approach to grow their business from the ground up.
+        
+        The result? 
+      </p>
+      <a class='justify-center p-3 inline-block pb-3' dir='ltr' >
+        <Link
+        href="/casestudies">
+         Read More </a>
+        
+    </div>
+    <div  class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        Unknown to Unstoppable. | 12x Audience Growth for a Small Business in 6 Months.
+      </h3>
+  
+      <p class="text-sm p-6">
+        A small business with big dreams. We helped this client grow their audience by 12x in just 4 months through a combination of engaging content, and strategic partnerships. Our team worked closely with the client to understand their brand, audience, and goals, and developed a comprehensive content strategy that resonated with their target market. By creating compelling, shareable content and leveraging data-driven insights, we were able to drive significant growth in their online presence and customer engagement. The results speak for themselves, with a 12x increase in audience size and a significant boost in brand awareness and customer loyalty.
+      </p>
+      <a class='justify-center p-3 inline-block pb-3' dir='ltr' >
+        <Link
+        href="/casestudies">
+         Read More </a>
+    </div>
+    <div  class="bg-white mb-6 pt-4 pl-2 pr-2 pb-4 rounded-lg ml-2 mr-2 shadow-lg hover:shadow-2xl border-2 border-black">
+      <h3 class="text-xl font-bold p-6">
+        Lines out the Door. | 5x Increase in Foot Traffic for a Local Restaurant.
+      </h3>
+   
+      <p class="text-sm p-6">
+        A local restaurant with big ambitions. We helped this client increase foot traffic by 5x in just 3 months through a combination of influencer marketing and engaging content. By partnering with local influencers and creating compelling, shareable content, we were able to drive significant growth in their customer base and brand awareness. Our team worked closely with the client to understand their goals and target market, and developed a customized marketing strategy that delivered real results. The restaurant saw lines out the door, increased revenue, and a loyal customer following that continues to grow.
+      </p>
+      <a class='justify-center p-3 inline-block pb-3' dir='ltr' >
+        <Link
+        href="/casestudies">
+         Read More </a>
+    </div>
+  -->
+
+
+
+
     
    <!--   <Whyminor/> <Toquiz/> -->
-    <Weown/>
-    <Features />
+
+
     <Logos />
     <Cta />
   </Container>
